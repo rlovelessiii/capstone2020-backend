@@ -17,6 +17,7 @@ const createUsersTable = () => {
       CREATE TABLE IF NOT EXISTS users (
       id integer PRIMARY KEY,
       email text UNIQUE,
+      username text,
       password text)`;
   return database.run(query);
 };
@@ -28,7 +29,7 @@ const findUserByEmail = (email, callback) => {
 };
 
 const createUser = (user, callback) => {
-  return database.run(`INSERT INTO users (email, password) VALUES (?, ?)`, user, (error) => {
+  return database.run(`INSERT INTO users (email, username, password) VALUES (?, ?)`, user, (error) => {
     callback(error);
   });
 };
@@ -43,9 +44,10 @@ router.get('/', function(req, res, next) {
 router.post('/register', (req, res) => {
   console.log(req.body);
   const email = req.body.email.toLowerCase();
+  const username = req.body.username;
   const password = bcrypt.hashSync(req.body.password);
 
-  createUser([email, password], (error) => {
+  createUser([email, username, password], (error) => {
     if (error) {
       if (error.errno === 19)
         return res.status(409).send('Email already registered!');
