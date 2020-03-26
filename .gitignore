@@ -62,3 +62,6 @@ typings/
 
 # databases
 *.db
+
+#IDE stuff
+.idea
