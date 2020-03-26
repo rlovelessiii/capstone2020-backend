@@ -29,7 +29,7 @@ const findUserByEmail = (email, callback) => {
 };
 
 const createUser = (user, callback) => {
-  return database.run(`INSERT INTO users (email, username, password) VALUES (?, ?)`, user, (error) => {
+  return database.run(`INSERT INTO users (email, username, password) VALUES (?, ?, ?)`, user, (error) => {
     callback(error);
   });
 };
