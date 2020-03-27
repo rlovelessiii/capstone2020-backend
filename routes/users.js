@@ -24,10 +24,16 @@ const createUsersTable = () => {
 };
 
 const findUserByEmail = (email, callback) => {
-  return database.get(`SELECT * FROM users WHERE email = ?`,[email], (error, row) => {
+  return database.get(`SELECT * FROM users WHERE email = ?`, email, (error, row) => {
     callback(error, row);
   });
 };
+
+const findUserById = (id, callback) => {
+  return database.get(`SELECT * FROM users WHERE id = ?`, id, (error, row) => {
+    callback(error, row);
+  })
+}
 
 const createUser = (user, callback) => {
   return database.run(`INSERT INTO users (email, username, password) VALUES (?, ?, ?)`, user, (error) => {
@@ -35,11 +41,17 @@ const createUser = (user, callback) => {
   });
 };
 
-const updateEmail = (data, callback) => {
-  return database.run(`UPDATE users SET email = ? WHERE id = ?`, data, (error) => {
+const updateEmail = (user, callback) => {
+  return database.run(`UPDATE users SET email = ? WHERE id = ?`, user, (error) => {
     callback(error);
   });
 };
+
+const updateUsername = (user, callback) => {
+  return database.run(`UPDATE users SET username = ? WHERE id = ?`, user, (error) => {
+    callback(error);
+  });
+}
 
 createUsersTable();
 
@@ -100,6 +112,20 @@ router.post('/update/email', (req, res) => {
       res.status(200).send(user);
     });
   });
+});
+
+router.post('/update/username', (req, res) => {
+  const username = req.body.value.username;
+  const id = parseInt(req.body.id);
+  updateUsername([username, id], (error) => {
+    if (error) return res.status(500).send('Server Error');
+    findUserById(id, (error, user) => {
+      if (error) return res.status(500).send('Server Error');
+      if (!user) return res.status(404).send('User not found!');
+      user.password = psuedoPassword;
+      res.status(200).send(user);
+    })
+  })
 });
 
 router.post('/me', (req, res) => {
