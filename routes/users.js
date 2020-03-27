@@ -89,16 +89,16 @@ router.post('/login', (req, res) => {
 });
 
 router.post('/update/email', (req, res) => {
-  const email = req.body.value;
-  const id = req.body.id;
-  updateEmail({email, id}, (error) => {
+  const email = req.body.value.email;
+  const id = parseInt(req.body.id);
+  updateEmail([email, id], (error) => {
+    if (error) return res.status(500).send('Server Error');
+    findUserByEmail(email, (error, user) => {
       if (error) return res.status(500).send('Server Error');
-      findUserByEmail(email, (error, user) => {
-        if (error) return res.status(500).send('Server Error');
-        if (!user) return res.status(404).send('User not found!');
-        user.password = psuedoPassword;
-        res.status(200).send(user);
-      });
+      if (!user) return res.status(404).send('User not found!');
+      user.password = psuedoPassword;
+      res.status(200).send(user);
+    });
   });
 });
 
