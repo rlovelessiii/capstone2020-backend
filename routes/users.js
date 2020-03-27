@@ -6,6 +6,7 @@ const bcrypt = require('bcryptjs');
 const router = express.Router();
 
 const SECRET_KEY = 'key1234';
+const psuedoPassword = '****************';
 
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
@@ -30,6 +31,12 @@ const findUserByEmail = (email, callback) => {
 
 const createUser = (user, callback) => {
   return database.run(`INSERT INTO users (email, username, password) VALUES (?, ?, ?)`, user, (error) => {
+    callback(error);
+  });
+};
+
+const updateEmail = (data, callback) => {
+  return database.run(`UPDATE users SET email = ? WHERE id = ?`, data, (error) => {
     callback(error);
   });
 };
@@ -68,6 +75,8 @@ router.post('/login', (req, res) => {
     const result = bcrypt.compareSync(password, user.password);
     if (!result) return res.status(401).send('Password not valid!');
 
+    user.password = psuedoPassword;
+
     const expiresIn = 24 * 60 * 60;
     const accessToken = jwt.sign({ id: user.id }, SECRET_KEY, { expiresIn: expiresIn });
 
@@ -76,6 +85,20 @@ router.post('/login', (req, res) => {
       "access_token": accessToken,
       "expires_in": expiresIn
     });
+  });
+});
+
+router.post('/update/email', (req, res) => {
+  const email = req.body.value;
+  const id = req.body.id;
+  updateEmail({email, id}, (error) => {
+      if (error) return res.status(500).send('Server Error');
+      findUserByEmail(email, (error, user) => {
+        if (error) return res.status(500).send('Server Error');
+        if (!user) return res.status(404).send('User not found!');
+        user.password = psuedoPassword;
+        res.status(200).send(user);
+      });
   });
 });
 
