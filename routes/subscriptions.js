@@ -39,15 +39,27 @@ router.post('/', function(req, res, next) {
         rows.forEach((row) => {
             subscriptions.push(row.provider);
         });
+        res.send({subscriptions: subscriptions})
     });
-    res.send({subscriptions: subscriptions})
 });
 
 /**
- * A put request to /subscriptions will 
+ * A post request to /subscriptions/add will insert a row in the subscription table for the user
+ * with the id of id and provider of provider
  */
-router.post('/add', function(req, res, next) {
-    res.send('');
+router.put('/add', function(req, res, next) {
+    let sql = `INSERT INTO subscriptions (id, provider) VALUES (?, ?)`;
+    let id = req.body.id;
+    let provider = req.body.provider;
+    console.log([id, provider]);
+    database.run(sql, [id, provider], (err) => {
+        if(err) {
+            console.log(err.message);
+            res.status(500).send({status: 'Error'});
+        } else {
+            res.send({status: 'success'});
+        }
+    });
 });
 
 module.exports = router;
