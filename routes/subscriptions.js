@@ -40,7 +40,14 @@ router.post('/', function(req, res, next) {
             subscriptions.push(row.provider);
         });
     });
-    database.close();
     res.send({subscriptions: subscriptions})
 });
+
+/**
+ * A put request to /subscriptions will 
+ */
+router.post('/add', function(req, res, next) {
+    res.send('');
+});
+
 module.exports = router;
