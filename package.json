@@ -9,6 +9,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "latest",
     "cookie-parser": "~1.4.4",
+    "curl": "^0.1.4",
     "debug": "~2.6.9",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.5.1",
