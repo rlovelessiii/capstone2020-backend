@@ -44,14 +44,13 @@ router.post('/', function(req, res, next) {
 });
 
 /**
- * A post request to /subscriptions/add will insert a row in the subscription table for the user
+ * A post request to /subscriptions will insert a row in the subscription table for the user
  * with the id of id and provider of provider
  */
-router.put('/add', function(req, res, next) {
+router.put('/', function(req, res, next) {
     let sql = `INSERT INTO subscriptions (id, provider) VALUES (?, ?)`;
     let id = req.body.id;
     let provider = req.body.provider;
-    console.log([id, provider]);
     database.run(sql, [id, provider], (err) => {
         if(err) {
             console.log(err.message);
@@ -59,6 +58,23 @@ router.put('/add', function(req, res, next) {
         } else {
             res.send({status: 'success'});
         }
+    });
+});
+
+/**
+ * A delete request to /subscriptions/:id/:provider will delete the provide from the user
+ */
+router.delete('/:id/:provider', function(req, res, next) {
+    let sql = `DELETE FROM subscriptions
+               WHERE id = ? and provider = ?`
+    let id = req.params.id;
+    let provider = req.params.provider;
+    database.run(sql, [id, provider], (err) => {
+        if(err) {
+            console.log(err.message);
+            res.status(500).send({status: 'Error'});
+        }
+        res.send({status: 'success'});
     });
 });
 
