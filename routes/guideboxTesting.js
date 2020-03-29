@@ -15,7 +15,7 @@ router.get('/shows/all', (req, res) => {
 });
 
 router.get('/shows/id', (req, res) => {
-  guidebox.shows.id();
+  guidebox.shows.details();
 });
 
 router.get('/shows/season', (req, res) => {
@@ -64,6 +64,42 @@ router.get('/movies/trailers', (req, res) => {
 
 router.get('/movies/related', (req, res) => {
   guidebox.movies.related();
+});
+
+router.get('/channels/all', (req, res) => {
+  guidebox.channels.all();
+});
+
+router.get('/channels/details', (req, res) => {
+  guidebox.channels.details();
+});
+
+router.get('/channels/images', (req, res) => {
+  guidebox.channels.images();
+});
+
+router.get('/sources', (req, res) => {
+  guidebox.sources();
+});
+
+router.get('/genres', (req, res) => {
+  guidebox.genres();
+});
+
+router.get('/tags', (req, res) => {
+  guidebox.tags();
+});
+
+router.get('/person/details', (req, res) => {
+  guidebox.person.details();
+});
+
+router.get('/person/images', (req, res) => {
+  guidebox.person.images();
+});
+
+router.get('/person/credits', (req, res) => {
+  guidebox.person.credits();
 });
 
 module.exports = router;
