@@ -6,12 +6,18 @@ const router = express.Router();
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 
+function callback(res, body) {
+  res.send(body);
+}
+
 router.get('/', function(req, res, next) {
   res.send('Guidebox Module Testing');
 });
 
 router.get('/shows/all', (req, res) => {
-  guidebox.shows.all();
+   guidebox.shows.all((results) => {
+     res.send(results);
+   });
 });
 
 router.get('/shows/id', (req, res) => {

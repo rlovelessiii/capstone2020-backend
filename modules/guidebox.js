@@ -1,8 +1,8 @@
 const curl = require('curl');
 
-// 1335064ad9cf341689d2332ea3e56b21d783051d
+// 1335064ad9cf341689d2332ea3e56b21d783051d 051a88232225f94af2cd26fd1b6761a8b25e7be6
 const BASE_URL = 'http://api-public.guidebox.com/v2/';
-const API_KEY = '?api_key=051a88232225f94af2cd26fd1b6761a8b25e7be6';
+let API_KEY = '?api_key=';
 
 // Guidebox endpoints
 const SHOWS_ENDPOINT = 'shows';
@@ -30,38 +30,44 @@ const INCLUDE_IN_THEATERS_PARAM = '&include_in_theaters=';
 const TYPE_PARAM = '&type=';
 const ROLE_PARAM = '&role=';
 
-// Guidebox default attribute values
-const CHANNEL = 'all';
-const OFFSET = '0';
-const LIMIT = '25';
-const SOURCES = 'all';
-const PLATFORM = 'all';
-const TAGS = '';
-const INCLUDE_LINKS = 'false';
-const REVERSE_ORDERING = 'false';
-const FILTER = 'all';
-const INCLUDE_PREORDERS = 'false';
-const INCLUDE_IN_THEATERS = 'false';
-const TYPE = 'all';
-const ROLE = 'cast';
-// testing values
-const SHOW_ID = '59077';
-const SEASON = '1';
-const EPISODE_ID = '10172854';
-const MOVIE_ID = '173891';
-const CHANNEL_ID = '52';
-const PERSON_ID = '287936';
+const defaultParameters = {
+  "channel": "all",
+  "offset": "0",
+  "limit": "25",
+  "sources": "all",
+  "platform": "all",
+  "tags": "",
+  "include_links": "false",
+  "reverse_ordering": "false",
+  "filter": "all",
+  "include_preorders": "false",
+  "include_in_theaters": "false",
+  "type": "all",
+  "role": "cast"
+};
 
-function processResponse(err, res, body) {
-  if (err) console.log(err);
-  return body;
-}
+const devParameters = {
+  "show_id": "59077",
+  "season": "1",
+  "episode_id": "10172854",
+  "movie_id": "173891",
+  "channel_id": "52",
+  "person_id": "287936"
+};
 
 module.exports = {
+  init: (api_key) => {
+    API_KEY += api_key;
+  },
+  getDefaultParamValues: (callback) => {
+    callback(defaultParameters);
+  },
+  getDevParamValues: (callback) => {
+    callback(devParameters);
+  },
   // '/shows' endpoints
   shows: {
-    all: (channel=CHANNEL, offset=OFFSET, limit=LIMIT, sources=SOURCES, platform=PLATFORM, tags=TAGS) => {
-
+    all: (channel, offset, limit, sources, platform, tags, callback) => {
       const url = BASE_URL + SHOWS_ENDPOINT + API_KEY +
         CHANNEL_PARAM + channel +
         OFFSET_PARAM + offset +
@@ -70,10 +76,9 @@ module.exports = {
         PLATFORM_PARAM + platform +
         TAGS_PARAM + tags;
 
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     },
-    details: (show_id=SHOW_ID, channel=CHANNEL, offset=OFFSET, limit=LIMIT, sources=SOURCES, platform=PLATFORM) => {
-
+    details: (show_id, channel, offset, limit, sources, platform, callback) => {
       const url = BASE_URL + SHOWS_ENDPOINT + '/' + show_id + API_KEY +
         CHANNEL_PARAM + channel +
         OFFSET_PARAM + offset +
@@ -81,10 +86,9 @@ module.exports = {
         SOURCES_PARAM + sources +
         PLATFORM_PARAM + platform;
 
-      curl.getJSON(url, processResponse)
+      curl.getJSON(url, callback)
     },
-    season: (show_id=SHOW_ID, channel=CHANNEL, offset=OFFSET, limit=LIMIT, sources=SOURCES, platform=PLATFORM) => {
-
+    season: (show_id, channel, offset, limit, sources, platform, callback) => {
       const url = BASE_URL + SHOWS_ENDPOINT + '/' + show_id + '/seasons' + API_KEY +
         CHANNEL_PARAM + channel +
         OFFSET_PARAM + offset +
@@ -92,10 +96,9 @@ module.exports = {
         SOURCES_PARAM + sources +
         PLATFORM_PARAM + platform;
 
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     },
-    episodes: (show_id=SHOW_ID, season=SEASON, offset=OFFSET, limit=LIMIT, sources=SOURCES, platform=PLATFORM, include_links=INCLUDE_LINKS, reverse_ordering=REVERSE_ORDERING) => {
-
+    episodes: (show_id, season, offset, limit, sources, platform, include_links, reverse_ordering, callback) => {
       const url = BASE_URL + SHOWS_ENDPOINT + '/' + show_id + '/episodes' + API_KEY +
         SEASON_PARAM + season +
         OFFSET_PARAM + offset +
@@ -105,47 +108,36 @@ module.exports = {
         INCLUDE_LINKS_PARAM + include_links +
         REVERSE_ORDERING_PARAM + reverse_ordering;
 
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     },
-    images: (show_id=SHOW_ID, filter=FILTER) => {
-
+    images: (show_id, filter, callback) => {
       const url = BASE_URL + SHOWS_ENDPOINT + '/' + show_id + '/images' + API_KEY +
         FILTER_PARAM + filter;
-
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     },
-    related: (show_id=SHOW_ID) => {
-
+    related: (show_id, callback) => {
       const url = BASE_URL + SHOWS_ENDPOINT + '/' + show_id + '/related' + API_KEY;
-
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     },
-    available_content: (show_id=SHOW_ID) => {
-
+    available_content: (show_id, callback) => {
       const url = BASE_URL + SHOWS_ENDPOINT + '/' + show_id + '/available_content' + API_KEY;
-
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     }
   },
   // '/episodes' endpoints
   episodes: {
-    details: (episode_id=EPISODE_ID) => {
-
+    details: (episode_id, callback) => {
       const url = BASE_URL + EPISODES_ENDPOINT + '/' + episode_id + API_KEY;
-
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     },
-    images: (episode_id=EPISODE_ID) => {
-
+    images: (episode_id, callback) => {
       const url = BASE_URL + EPISODES_ENDPOINT + '/' + episode_id + '/images' + API_KEY;
-
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     }
   },
   // '/movies' endpoints
   movies: {
-    all: (offset=OFFSET, limit=LIMIT, sources=SOURCES, platform=PLATFORM, include_preorders=INCLUDE_PREORDERS, include_in_theaters=INCLUDE_IN_THEATERS) => {
-
+    all: (offset, limit, sources, platform, include_preorders, include_in_theaters, callback) => {
       const url = BASE_URL + MOVIES_ENDPOINT + API_KEY +
         OFFSET_PARAM + offset +
         LIMIT_PARAM + limit +
@@ -154,94 +146,83 @@ module.exports = {
         INCLUDE_PREORDERS_PARAM + include_preorders +
         INCLUDE_IN_THEATERS_PARAM + include_in_theaters;
 
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     },
-    details: (movie_id=MOVIE_ID) => {
-
+    details: (movie_id, callback) => {
       const url = BASE_URL + MOVIES_ENDPOINT + '/' + movie_id + API_KEY;
-
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     },
-    images: (movie_id=MOVIE_ID, filter=FILTER) => {
-
+    images: (movie_id, filter, callback) => {
       const url = BASE_URL + MOVIES_ENDPOINT + '/' + movie_id + '/images' + API_KEY +
         FILTER_PARAM + filter;
-
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     },
-    trailers: (movie_id=MOVIE_ID, offset=OFFSET, limit=LIMIT, sources=SOURCES) => {
-
+    trailers: (movie_id, offset, limit, sources, callback) => {
       const url = BASE_URL + MOVIES_ENDPOINT + '/' + movie_id + '/videos' + API_KEY +
         OFFSET_PARAM + offset +
         LIMIT_PARAM + limit +
         SOURCES_PARAM + sources;
 
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     },
-    related: (movie_id=MOVIE_ID) => {
+    related: (movie_id, callback) => {
       const url = BASE_URL + MOVIES_ENDPOINT + '/' + movie_id + '/related' + API_KEY;
-
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     }
   },
   // '/channels' endpoints
   channels: {
-    all: (type=TYPE, offset=OFFSET, limit=LIMIT) => {
-
+    all: (type, offset, limit, callback) => {
       const url = BASE_URL + CHANNELS_ENDPOINT + API_KEY +
         TYPE_PARAM + type +
         OFFSET_PARAM + offset +
         LIMIT_PARAM + limit;
 
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     },
-    details: (channel_id=CHANNEL_ID) => {
-
+    details: (channel_id, callback) => {
       const url = BASE_URL + CHANNELS_ENDPOINT + '/' + channel_id + API_KEY;
-
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     },
-    images: (channel_id=CHANNEL_ID) => {
-
+    images: (channel_id, callback) => {
       const url = BASE_URL + CHANNELS_ENDPOINT + '/' + channel_id + '/images' + API_KEY;
-
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     }
   },
   // '/sources' endpoints
-  sources: (type=TYPE, filter=FILTER) => {
+  sources: (type, filter, callback) => {
     const url = BASE_URL + SOURCES_ENDPOINT + API_KEY +
       TYPE_PARAM + type +
       FILTER_PARAM + filter;
-    curl.getJSON(url, processResponse);
+    curl.getJSON(url, callback);
   },
   // '/genres' endpoints
-  genres: () => {
+  genres: (callback) => {
     const url = BASE_URL + GENRE_ENDPOINT + API_KEY;
-    curl.getJSON(url, processResponse);
+    curl.getJSON(url, callback);
   },
   // '/tags' endpoints
-  tags: (offset=OFFSET, limit=LIMIT) => {
+  tags: (offset, limit, callback) => {
     const url = BASE_URL + TAGS_ENDPOINT + API_KEY +
       OFFSET_PARAM + offset +
       LIMIT_PARAM + limit;
-    curl.getJSON(url, processResponse);
+    curl.getJSON(url, callback);
   },
   // '/person' endpoints
   person: {
-    details: (person_id=PERSON_ID) => {
+    details: (person_id, callback) => {
       const url = BASE_URL + PERSON_ENDPOINT + '/' + person_id + API_KEY;
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     },
-    images: (person_id=PERSON_ID) => {
+    images: (person_id, callback) => {
       const url = BASE_URL + PERSON_ENDPOINT + '/' + person_id + '/images' + API_KEY;
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     },
-    credits: (person_id=PERSON_ID, role=ROLE, type=TYPE) => {
+    credits: (person_id, role, type, callback) => {
       const url = BASE_URL + PERSON_ENDPOINT + '/' + person_id + '/credits' + API_KEY +
         ROLE_PARAM + role +
         TYPE_PARAM + type;
-      curl.getJSON(url, processResponse);
+      curl.getJSON(url, callback);
     }
   }
 };

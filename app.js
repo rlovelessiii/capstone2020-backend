@@ -7,7 +7,7 @@ const cors = require('cors');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const subscriptionsRouter = require('./routes/subscriptions');
-const guideboxTestRouter = require('./routes/guideboxTesting');
+const settingsRouter = require('./routes/settings');
 
 const app = express();
 
@@ -21,6 +21,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/subscriptions', subscriptionsRouter);
-app.use('/guidebox', guideboxTestRouter);
+app.use('/settings', settingsRouter);
 
 module.exports = app;
