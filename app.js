@@ -6,6 +6,7 @@ const cors = require('cors');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
+const browseRouter = require('./routes/browse');
 const subscriptionsRouter = require('./routes/subscriptions');
 const settingsRouter = require('./routes/settings');
 
@@ -20,6 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/browse', browseRouter);
 app.use('/subscriptions', subscriptionsRouter);
 app.use('/settings', settingsRouter);
 

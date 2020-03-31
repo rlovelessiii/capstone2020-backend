@@ -78,14 +78,8 @@ module.exports = {
 
       curl.getJSON(url, callback);
     },
-    details: (show_id, channel, offset, limit, sources, platform, callback) => {
-      const url = BASE_URL + SHOWS_ENDPOINT + '/' + show_id + API_KEY +
-        CHANNEL_PARAM + channel +
-        OFFSET_PARAM + offset +
-        LIMIT_PARAM + limit +
-        SOURCES_PARAM + sources +
-        PLATFORM_PARAM + platform;
-
+    details: (show_id, callback) => {
+      const url = BASE_URL + SHOWS_ENDPOINT + '/' + show_id + API_KEY;
       curl.getJSON(url, callback)
     },
     season: (show_id, channel, offset, limit, sources, platform, callback) => {
