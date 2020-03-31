@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const Guidebox = require('../modules/guidebox');
 const router = express.Router();
 
-Guidebox.init('051a88232225f94af2cd26fd1b6761a8b25e7be6');
+Guidebox.init('1335064ad9cf341689d2332ea3e56b21d783051d');
 
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
