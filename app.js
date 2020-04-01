@@ -6,7 +6,9 @@ const cors = require('cors');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const browseRouter = require('./routes/browse');
+const showsRouter = require('./routes/shows');
+const episodesRouter = require('./routes/episodes');
+const moviesRouter = require('./routes/movies');
 const subscriptionsRouter = require('./routes/subscriptions');
 const settingsRouter = require('./routes/settings');
 
@@ -21,8 +23,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/browse', browseRouter);
+app.use('/shows', showsRouter);
 app.use('/subscriptions', subscriptionsRouter);
 app.use('/settings', settingsRouter);
+app.use('/movies', moviesRouter);
+app.use('/episodes', episodesRouter);
 
 module.exports = app;

@@ -2,7 +2,7 @@ const curl = require('curl');
 
 // 1335064ad9cf341689d2332ea3e56b21d783051d 051a88232225f94af2cd26fd1b6761a8b25e7be6
 const BASE_URL = 'http://api-public.guidebox.com/v2/';
-let API_KEY = '?api_key=';
+const API_KEY = '?api_key=deeaee8d88dd77a28e5c8de494f3fd2334cb0dd2';
 
 // Guidebox endpoints
 const SHOWS_ENDPOINT = 'shows';
@@ -56,9 +56,6 @@ const devParameters = {
 };
 
 module.exports = {
-  init: (api_key) => {
-    API_KEY += api_key;
-  },
   getDefaultParamValues: (callback) => {
     callback(defaultParameters);
   },
