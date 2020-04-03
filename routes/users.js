@@ -105,53 +105,25 @@ router.post('/login', (req, res) => {
   });
 });
 
-router.post('/update/email', (req, res) => {
+router.post('/update', (req, res) => {
   const email = req.body.value.email;
-  const id = parseInt(req.body.id);
-
-  updateEmail([email, id], (error) => {
-    if (error) return res.status(500).send('Server Error');
-
-    findUserByEmail(email, (error, user) => {
-      if (error) return res.status(500).send('Server Error');
-      if (!user) return res.status(404).send('User not found!');
-
-      user.password = null;
-      res.status(200).send(user);
-    });
-  });
-});
-
-router.post('/update/username', (req, res) => {
   const username = req.body.value.username;
-  const id = parseInt(req.body.id);
-
-  updateUsername([username, id], (error) => {
-    if (error) return res.status(500).send('Server Error');
-
-    findUserById(id, (error, user) => {
-      if (error) return res.status(500).send('Server Error');
-      if (!user) return res.status(404).send('User not found!');
-
-      user.password = null;
-      res.status(200).send(user);
-    })
-  })
-});
-
-router.post('/update/password', (req, res) => {
   const oldPassword = req.body.value.old;
   const newPassword = bcrypt.hashSync(req.body.value.password.set);
   const id = parseInt(req.body.id);
 
-  findUserById(id, (error, user) => {
-    if (error) return res.status(500).send('Server Error');
-    if (!user) return res.status(404).send('User not found!');
-
-    const result = bcrypt.compareSync(oldPassword, user.password);
-    if (!result) return res.status(401).send('Password not valid!');
-
-    updatePassword([newPassword, id], (error) => {
+  if (email) {
+    updateEmail([email, id], (error) => {
+      if (error) return res.status(500).send('Server Error');
+      findUserByEmail(email, (error, user) => {
+        if (error) return res.status(500).send('Server Error');
+        if (!user) return res.status(404).send('User not found!');
+        user.password = null;
+        res.status(200).send(user);
+      })
+    })
+  } else if (username) {
+    updateUsername([username, id], (error) => {
       if (error) return res.status(500).send('Server Error');
 
       findUserById(id, (error, user) => {
@@ -162,7 +134,27 @@ router.post('/update/password', (req, res) => {
         res.status(200).send(user);
       })
     })
-  });
+  } else if (oldPassword && newPassword) {
+    findUserById(id, (error, user) => {
+      if (error) return res.status(500).send('Server Error');
+      if (!user) return res.status(404).send('User not found!');
+
+      const result = bcrypt.compareSync(oldPassword, user.password);
+      if (!result) return res.status(401).send('Password not valid!');
+
+      updatePassword([newPassword, id], (error) => {
+        if (error) return res.status(500).send('Server Error');
+
+        findUserById(id, (error, user) => {
+          if (error) return res.status(500).send('Server Error');
+          if (!user) return res.status(404).send('User not found!');
+
+          user.password = null;
+          res.status(200).send(user);
+        })
+      })
+    })
+  }
 });
 
 router.post('/me', (req, res) => {
