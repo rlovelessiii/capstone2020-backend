@@ -10,7 +10,7 @@ router.post('/', (req, res) => {
   console.log(req.body);
   const settings = req.body.settings;
   const tags = req.body.tags;
-  Guidebox.shows.all(settings.channel, '0', '10', settings.sources, settings.platform, tags, (err, response, body) => {
+  Guidebox.shows.all(settings.channels, '0', '10', settings.sources, settings.platforms, tags, (err, response, body) => {
     res.status(200).send(body.results);
   });
 });

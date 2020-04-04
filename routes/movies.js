@@ -10,7 +10,7 @@ router.use(bodyParser.json());
 router.post('/', (req, res) => {
   console.log(req.body);
   const settings = req.body.settings;
-  Guidebox.movies.all('0', '10', settings.sources, settings.platform, settings.include_preorders, settings.include_in_theaters, (err, response, body) => {
+  Guidebox.movies.all('0', '10', settings.sources, settings.platforms, settings.include_preorders, settings.include_in_theaters, (err, response, body) => {
     res.status(200).send(body);
   })
 });

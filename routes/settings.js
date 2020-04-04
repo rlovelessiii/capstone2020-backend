@@ -23,11 +23,11 @@ const filterDefaultParameters = (user_id, callback) => {
     callback([
       user_id,
       values.channel,
+      values.channel,
       values.sources,
       values.platform,
       values.include_preorders,
       values.include_in_theaters,
-      values.type
     ]);
   });
 };
@@ -37,12 +37,12 @@ const createBrowseTable = () => {
     CREATE TABLE IF NOT EXISTS browse (
     id integer PRIMARY KEY,
     user_id integer UNIQUE,
-    channel text,
+    channelList text,
+    channels text,
     sources text,
-    platform text,
+    platforms text,
     include_preorders text,
-    include_in_theaters text,
-    type text)`;
+    include_in_theaters text)`;
   return database.run(query);
 };
 
@@ -53,9 +53,15 @@ const findSettingsById = (user_id, callback) => {
 };
 
 const createUserSettings = (settings, callback) => {
-  return database.run(`INSERT INTO browse (user_id, channel, sources, platform, include_preorders, include_in_theaters, type) VALUES (?, ?, ?, ?, ?, ?, ?)`, settings, (error) => {
+  return database.run(`INSERT INTO browse (user_id, channelList, channels, sources, platforms, include_preorders, include_in_theaters) VALUES (?, ?, ?, ?, ?, ?, ?)`, settings, (error) => {
     callback(error);
-  });
+  })
+};
+
+const updateUserSettings = (col, setting, callback) => {
+  return database.run(`UPDATE browse SET ` + col + ` = ? WHERE id = ?`, setting, (error) => {
+    callback(error);
+  })
 };
 
 createBrowseTable();
@@ -64,7 +70,7 @@ router.get('/browse', (req, res) => {
 });
 
 router.post('/browse', (req, res) => {
-  const user_id = req.body.user_id;
+  const user_id = req.body.userId;
   console.log(user_id);
   findSettingsById(user_id, (error, settings) => {
     if (error) return res.status(500).send('Server Error');
@@ -87,7 +93,22 @@ router.post('/browse', (req, res) => {
     } else {
       res.status(200).send(settings);
     }
-  });
+  })
+});
+
+router.post('/update', (req, res) => {
+  const user_id = req.body.userId;
+  const col = req.body.key;
+  const value = req.body.value;
+  console.log(req.body);
+  updateUserSettings(col, [value, user_id], (error) => {
+    if (error) return res.status(500).send('Server Error');
+    findSettingsById(user_id, (error, settings) => {
+      if (error) return res.status(500).send('Server Error');
+      if (!settings) return res.status(404).send('User settings not found!');
+      res.status(200).send(settings);
+    })
+  })
 });
 
 module.exports = router;

@@ -11,7 +11,7 @@ router.post('/', (req, res) => {
   const show_id = req.body.showId;
   const season = req.body.season;
   const settings = req.body.settings;
-  Guidebox.shows.episodes(show_id, season, '0', '25', settings.sources, settings.platform, 'true', 'true', (err, response, body) => {
+  Guidebox.shows.episodes(show_id, season, '0', '25', settings.sources, settings.platforms, 'true', 'true', (err, response, body) => {
     res.status(200).send(body);
   })
 });
