@@ -1,0 +1,5525 @@
+{
+  "total_results": 165,
+  "total_returned": 165,
+  "results": [
+    {
+      "id": 1,
+      "name": "ABC",
+      "short_name": "abc",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/060515/thumbnails_small/1-2070686035-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/060515/thumbnails_medium/1-8463486484-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/060515/thumbnails_large/1-9859858886-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/060515/thumbnails_xlarge/1-2390985815-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0037052",
+        "wikipedia_id": 62027
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 270204986356978,
+          "link": "https://www.facebook.com/ABCNetwork"
+        },
+        "twitter": {
+          "twitter_id": 631478663,
+          "link": "https://twitter.com/ABCNetwork"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "abc_tveverywhere",
+            "display_name": "ABC",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://abc.go.com/watch-live",
+            "link_type": "web"
+          }
+        ],
+        "ios": [
+          {
+            "source": "abc_tveverywhere",
+            "display_name": "ABC",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "abcplayer://live",
+            "link_type": "ios",
+            "app_name": "WATCH ABC",
+            "app_link": 1,
+            "app_required": 1,
+            "app_download_link": "itms-apps://itunes.apple.com/app/abc-player/id364191819"
+          }
+        ],
+        "android": [
+          {
+            "source": "abc_tveverywhere",
+            "display_name": "ABC",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "abcplayer://live",
+            "link_type": "android",
+            "app_name": "WATCH ABC",
+            "app_link": 1,
+            "app_required": 1,
+            "app_download_link": "https://play.google.com/store/apps/details?id=com.disney.datg.videoplatforms.android.abc"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "NBC",
+      "short_name": "nbc",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/2-8557951380-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/2-1907153908-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/2-2181626372-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/2-4603089890-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0072315",
+        "wikipedia_id": 21780
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 89742860745,
+          "link": "https://www.facebook.com/nbc"
+        },
+        "twitter": {
+          "twitter_id": 26585095,
+          "link": "https://twitter.com/nbc"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "nbc_tveverywhere",
+            "display_name": "NBC",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.nbc.com/live",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 3,
+      "name": "CBS",
+      "short_name": "cbs",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/3-2487872262-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/3-9571565720-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/3-8629465820-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/3-8213735870-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0070627",
+        "wikipedia_id": 37653
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 47360808996,
+          "link": "https://www.facebook.com/CBS"
+        },
+        "twitter": {
+          "twitter_id": 97739866,
+          "link": "https://twitter.com/CBS"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "cbs_all_access",
+            "display_name": "CBS All Access",
+            "type": "subscription",
+            "link": "http://www.cbs.com/live-tv/",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 4,
+      "name": "FOX",
+      "short_name": "fox",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/060515/thumbnails_small/4-9622087343-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/060515/thumbnails_medium/4-938629993-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/060515/thumbnails_large/4-8287207526-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/060515/thumbnails_xlarge/4-6226862594-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0070925",
+        "wikipedia_id": 46252
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 45002877992,
+          "link": "https://www.facebook.com/FOXTV"
+        },
+        "twitter": {
+          "twitter_id": 16537989,
+          "link": "https://twitter.com/FOXTV"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 5,
+      "name": "PBS",
+      "short_name": "pbs",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/5-3888149406-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/5-6562801343-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/5-6178086991-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/5-9488882231-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0039462",
+        "wikipedia_id": 29697498
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 19013582168,
+          "link": "https://www.facebook.com/pbs"
+        },
+        "twitter": {
+          "twitter_id": 12133382,
+          "link": "https://twitter.com/pbs"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 6,
+      "name": "CW",
+      "short_name": "cw",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/6-9286287045-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/6-725774309-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/6-1180412649-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/6-8922163504-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0174148",
+        "wikipedia_id": 3831118
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 8062362435,
+          "link": "https://www.facebook.com/TheCW"
+        },
+        "twitter": {
+          "twitter_id": 22083910,
+          "link": "https://twitter.com/CW_network"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 8,
+      "name": "Freeform",
+      "short_name": "abc_family",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/060515/thumbnails_small/8-6699904539-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/060515/thumbnails_medium/8-6311897570-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/060515/thumbnails_large/8-4208404850-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/060515/thumbnails_xlarge/8-8668774231-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0050794",
+        "wikipedia_id": 616591
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 9002965673,
+          "link": "https://www.facebook.com/abcfamily"
+        },
+        "twitter": {
+          "twitter_id": 40105401,
+          "link": "https://twitter.com/abcfamily"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "abc_family",
+            "display_name": "Freeform",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://abcfamily.go.com/watch-live",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 9,
+      "name": "TBS",
+      "short_name": "tbs",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/9-1810229477-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/9-3909745119-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/9-5645546266-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/9-7193799498-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0005051",
+        "wikipedia_id": 31234796
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 113553528685803,
+          "link": "https://www.facebook.com/TBSNetwork"
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "tbs",
+            "display_name": "TBS",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.tbs.com/watchtbs/east.html",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 10,
+      "name": "Comedy Central",
+      "short_name": "comedy_central",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/10-6379018328-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/10-2727028975-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/10-1758942781-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/10-2082629120-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0029768",
+        "wikipedia_id": 235879
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 6096369029,
+          "link": "https://www.facebook.com/ComedyCentral"
+        },
+        "twitter": {
+          "twitter_id": 23827692,
+          "link": "https://twitter.com/ComedyCentral"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 11,
+      "name": "Adult Swim",
+      "short_name": "adult_swim",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/11-1938546649-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/11-3598589683-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/11-8769777557-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/11-8470299746-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0153115",
+        "wikipedia_id": 326292
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 67985126744,
+          "link": "https://www.facebook.com/adultswim"
+        },
+        "twitter": {
+          "twitter_id": 18732790,
+          "link": "https://twitter.com/adultswim"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "adult_swim_tveverywhere",
+            "display_name": "Adult Swim",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.adultswim.com/videos/astv/live-simulcast-east/",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 12,
+      "name": "USA",
+      "short_name": "usa",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/12-5472303433-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/12-2316093697-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/12-9299582983-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/12-106734303-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0014957",
+        "wikipedia_id": 77826
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 175492113249,
+          "link": "https://www.facebook.com/USANetwork"
+        },
+        "twitter": {
+          "twitter_id": 19777078,
+          "link": "https://twitter.com/USA_Network"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "usa_tveverywhere",
+            "display_name": "USA",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.usanetwork.com/videos/live",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 13,
+      "name": "Discovery",
+      "short_name": "discovery",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/13-1839583167-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/13-3249457986-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/13-5447822926-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/13-2506737495-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0045277",
+        "wikipedia_id": 77807
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 6002238585,
+          "link": "https://www.facebook.com/Discovery"
+        },
+        "twitter": {
+          "twitter_id": 17842366,
+          "link": "https://twitter.com/Discovery"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 14,
+      "name": "Showtime",
+      "short_name": "showtime",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/14-9076868798-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/14-9827952203-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/14-1237164601-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/14-8815101329-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0075105",
+        "wikipedia_id": 77877
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 57403415485,
+          "link": "https://www.facebook.com/showtime"
+        },
+        "twitter": {
+          "twitter_id": 257548783,
+          "link": "https://twitter.com/Showtime"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "showtime",
+            "display_name": "Showtime Anytime",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.showtimeanytime.com/?s_cid=2014_9_SHO_LandingPage#play/live/showest",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 15,
+      "name": "TNT",
+      "short_name": "tnt",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/15-3524929597-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/15-4484398766-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/15-1296187058-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/15-1197437728-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0075510",
+        "wikipedia_id": 77825
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 122534311112187,
+          "link": "https://www.facebook.com/TNTDrama"
+        },
+        "twitter": {
+          "twitter_id": 15981505,
+          "link": "https://twitter.com/tntdrama"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "tnt",
+            "display_name": "TNT",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.tntdrama.com/watchtnt/east.html",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 16,
+      "name": "HGTV",
+      "short_name": "hgtv",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/16-3385391580-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/16-4084580229-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/16-223001591-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/16-6861780407-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0004908",
+        "wikipedia_id": 30876873
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 16801589212,
+          "link": "https://www.facebook.com/HGTV"
+        },
+        "twitter": {
+          "twitter_id": 20188834,
+          "link": "https://twitter.com/hgtv"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 17,
+      "name": "A&E",
+      "short_name": "ae",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/17-9753029332-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/17-515208138-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/17-7152491589-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/17-6877250015-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0056790",
+        "wikipedia_id": 472505
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 14044019798,
+          "link": "https://www.facebook.com/AETV"
+        },
+        "twitter": {
+          "twitter_id": 21442298,
+          "link": "https://twitter.com/AETV"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "ae_tveverywhere",
+            "display_name": "A&E",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.aetv.com/live-stream",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 18,
+      "name": "History",
+      "short_name": "history",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/18-6687811739-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/18-9326603105-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/18-9240135420-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/18-4265599786-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0003716",
+        "wikipedia_id": 748853
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 8429246183,
+          "link": "https://www.facebook.com/History"
+        },
+        "twitter": {
+          "twitter_id": 22692199,
+          "link": "https://twitter.com/history"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "history_tveverywhere",
+            "display_name": "The History Channel",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.history.com/live-stream",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 19,
+      "name": "Disney",
+      "short_name": "disney",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/19-93891486-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/19-7385718566-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/19-2218589285-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/19-6930802446-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0022105",
+        "wikipedia_id": 77808
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": 1909344061,
+          "link": "https://twitter.com/DisneyChannel"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "watchdisney_tveverywhere",
+            "display_name": "Watch Disney Channel",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://watchdisneychannel.go.com/live",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 20,
+      "name": "Syfy",
+      "short_name": "syfy",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/20-868179454-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/20-9801249508-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/20-580884922-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/20-9656262863-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0282285",
+        "wikipedia_id": 272659
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 145117908833008,
+          "link": "https://www.facebook.com/SyfyMovies"
+        },
+        "twitter": {
+          "twitter_id": 784845446,
+          "link": "https://twitter.com/SyfyTV"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "syfy_tveverywhere",
+            "display_name": "Syfy",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.syfy.com/live",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 21,
+      "name": "VH1",
+      "short_name": "vh1",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/21-887350562-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/21-7639114200-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/21-5317303878-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/21-1260561347-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0045189",
+        "wikipedia_id": 215619
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 6220048374,
+          "link": "https://www.facebook.com/VH1"
+        },
+        "twitter": {
+          "twitter_id": 33549858,
+          "link": "https://twitter.com/vh1"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 22,
+      "name": "MTV",
+      "short_name": "mtv",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/22-5453290283-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/22-9714658251-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/22-4292772585-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/22-628381749-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0063774",
+        "wikipedia_id": 18856
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 7245371700,
+          "link": "https://www.facebook.com/MTV"
+        },
+        "twitter": {
+          "twitter_id": 2367911,
+          "link": "https://twitter.com/MTV"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 23,
+      "name": "Telemundo",
+      "short_name": "telemundo",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/23-6849021963-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/23-7359628617-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/23-1852083938-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/23-1595560029-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0059426",
+        "wikipedia_id": 10839777
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 99881661864,
+          "link": "https://www.facebook.com/Telemundo"
+        },
+        "twitter": {
+          "twitter_id": 22952132,
+          "link": "https://twitter.com/telemundo"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 24,
+      "name": "Lifetime",
+      "short_name": "lifetime",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/24-1676842152-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/24-9117408208-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/24-7368164-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/24-437298045-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0006395",
+        "wikipedia_id": 217196
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 22455884086,
+          "link": "https://www.facebook.com/lifetime"
+        },
+        "twitter": {
+          "twitter_id": 7532872,
+          "link": "https://twitter.com/lifetimetv"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 25,
+      "name": "Oxygen",
+      "short_name": "oxygen",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/25-6211034199-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/25-9857437540-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/25-2847560421-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/25-4898896124-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0108651",
+        "wikipedia_id": 4316423
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 88329442747,
+          "link": "https://www.facebook.com/oxygennetwork"
+        },
+        "twitter": {
+          "twitter_id": 17792620,
+          "link": "https://twitter.com/oxygen"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "oxygen_tveverywhere",
+            "display_name": "Oxygen",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://now.oxygen.com/live",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 26,
+      "name": "Kids WB",
+      "short_name": "kids_wb",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/26-6446650917-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/26-2520604390-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/26-3717632848-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/26-7182257282-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0108606",
+        "wikipedia_id": 481171
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 27,
+      "name": "BBC America",
+      "short_name": "bbc_america",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/27-5654019029-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/27-9447713624-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/27-8935520215-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/27-2720167162-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0118334",
+        "wikipedia_id": 276866
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 13048857977,
+          "link": "https://www.facebook.com/BBCAmerica"
+        },
+        "twitter": {
+          "twitter_id": 18171994,
+          "link": "https://twitter.com/bbcamerica"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 28,
+      "name": "GSN",
+      "short_name": "gsn",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/28-6972616766-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/28-2878744561-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/28-2147720978-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/28-232673199-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0048547",
+        "wikipedia_id": 75027
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 81454940226,
+          "link": "https://www.facebook.com/gsn"
+        },
+        "twitter": {
+          "twitter_id": 44928072,
+          "link": "https://twitter.com/GSN"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 30,
+      "name": "Univision",
+      "short_name": "univision",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/30-4200430298-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/30-8808683809-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/30-1334447852-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/30-714231944-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0118688",
+        "wikipedia_id": 16118202
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 259955926518,
+          "link": "https://www.facebook.com/univision"
+        },
+        "twitter": {
+          "twitter_id": 40924038,
+          "link": "https://twitter.com/Univision"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 31,
+      "name": "Bravo",
+      "short_name": "bravo",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/31-7630523066-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/31-4076741999-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/31-8007815000-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/31-1422619159-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0076928",
+        "wikipedia_id": 351810
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 68863027747,
+          "link": "https://www.facebook.com/Bravo"
+        },
+        "twitter": {
+          "twitter_id": 15169907,
+          "link": "https://twitter.com/Bravotv"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "bravo_tveverywhere",
+            "display_name": "Bravo",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.bravotv.com/now/live",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 32,
+      "name": "FX",
+      "short_name": "fx",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/32-1414727425-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/32-1937278537-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/32-122254310-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/32-5354958116-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0060381",
+        "wikipedia_id": 434000
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 17265241079,
+          "link": "https://www.facebook.com/FX"
+        },
+        "twitter": {
+          "twitter_id": 16421962,
+          "link": "https://twitter.com/FXNetworks"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "fx_tveverywhere",
+            "display_name": "FX",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.fxnetworks.com/live-tv/fx/fx",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 33,
+      "name": "Nick",
+      "short_name": "nick",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/33-485461848-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/33-9465203792-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/33-3073731247-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/33-9400938618-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0103860",
+        "wikipedia_id": 154549
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 120551431317,
+          "link": "https://www.facebook.com/nickelodeon"
+        },
+        "twitter": {
+          "twitter_id": 58309829,
+          "link": "https://twitter.com/NickelodeonTV"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 34,
+      "name": "Spike",
+      "short_name": "spike",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/34-5031826752-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/34-348040681-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/34-5742562390-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/34-5547334147-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0099482",
+        "wikipedia_id": 250480
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 58297122158,
+          "link": "https://www.facebook.com/Spike"
+        },
+        "twitter": {
+          "twitter_id": 41648843,
+          "link": "https://twitter.com/spike"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 35,
+      "name": "Bio",
+      "short_name": "bio",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/35-7850312548-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/35-7104930854-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/35-7507689777-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/35-8916737958-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0240400",
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 123492867697144,
+          "link": "https://www.facebook.com/BIO"
+        },
+        "twitter": {
+          "twitter_id": 243230859,
+          "link": "https://twitter.com/Bio"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 36,
+      "name": "HBO",
+      "short_name": "hbo",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/36-4192732312-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/36-6224034233-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/36-3192140684-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/36-9508325778-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0008693",
+        "wikipedia_id": 4765530
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 113408673932,
+          "link": "https://www.facebook.com/HBO"
+        },
+        "twitter": {
+          "twitter_id": 15635604,
+          "link": "https://twitter.com/HBO"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 37,
+      "name": "Current",
+      "short_name": "current",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/37-2547009774-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/37-6118301009-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/37-2876101933-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/37-5607307744-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": null,
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 38,
+      "name": "Starz",
+      "short_name": "starz",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/38-3349552127-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/38-5011604666-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/38-6960272006-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/38-9696676763-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0000869",
+        "wikipedia_id": 1060085
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 91570464218,
+          "link": "https://www.facebook.com/Starz"
+        },
+        "twitter": {
+          "twitter_id": 21206424,
+          "link": "https://twitter.com/STARZ_Channel"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 39,
+      "name": "Nuvo TV",
+      "short_name": "nuvo_tv",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/39-3233872904-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/39-9960745386-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/39-6862284108-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/39-8962794826-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 3627777
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 197597926928057,
+          "link": "https://www.facebook.com/nuvoTV"
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 40,
+      "name": "Fox Reality",
+      "short_name": "fox_reality",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/40-7622456047-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/40-997076994-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/40-6817905414-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/40-8066603057-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0159248",
+        "wikipedia_id": 4380925
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 41,
+      "name": "C-Span",
+      "short_name": "c_span",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "co0108339",
+        "wikipedia_id": 77799
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 21472760578,
+          "link": "https://www.facebook.com/CSPAN"
+        },
+        "twitter": {
+          "twitter_id": 15675138,
+          "link": "https://twitter.com/cspan"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 42,
+      "name": "Planet Green",
+      "short_name": "planet_green",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/42-5764466440-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/42-5655294261-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/42-5118490099-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/42-9835555995-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0215073",
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 7958222923,
+          "link": "https://www.facebook.com/PlanetGreen"
+        },
+        "twitter": {
+          "twitter_id": 15639642,
+          "link": "https://twitter.com/planetgreen"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 43,
+      "name": "truTV",
+      "short_name": "trutv",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/43-2041269569-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/43-1903161686-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/43-9862860282-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/43-8284885431-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0214175",
+        "wikipedia_id": 455317
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 7990899756,
+          "link": "https://www.facebook.com/truTV"
+        },
+        "twitter": {
+          "twitter_id": 21884158,
+          "link": "https://twitter.com/trutv"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "trutv_tveverywhere",
+            "display_name": "truTV",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.trutv.com/live/index.html",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 44,
+      "name": "Logo",
+      "short_name": "logo",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/44-3883787058-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/44-4867593632-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/44-2572163390-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/44-9059751429-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0154766",
+        "wikipedia_id": 680080
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 34598893854,
+          "link": "https://www.facebook.com/logo"
+        },
+        "twitter": {
+          "twitter_id": 16688083,
+          "link": "https://twitter.com/LogoTV"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 45,
+      "name": "National Geographic",
+      "short_name": "national_geographic",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/45-9984913063-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/45-2222203869-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/45-5629969048-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/45-8342673815-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0303924",
+        "wikipedia_id": 925639
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 29194481004,
+          "link": "https://www.facebook.com/natgeotvUS"
+        },
+        "twitter": {
+          "twitter_id": 18244358,
+          "link": "https://twitter.com/NatGeoChannel"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 46,
+      "name": "AMC",
+      "short_name": "amc",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/46-7055109916-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/46-173400259-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/46-8184943231-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/46-15134523-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0019701",
+        "wikipedia_id": 801036
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 287560452086,
+          "link": "https://www.facebook.com/amc"
+        },
+        "twitter": {
+          "twitter_id": 148807607,
+          "link": "https://twitter.com/AMC_TV"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "amc",
+            "display_name": "AMC",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.amc.com/livestream",
+            "link_type": "web"
+          },
+          {
+            "source": "xfinity_tveverywhere",
+            "display_name": "Xfinity",
+            "tv_channel": "AMC",
+            "type": "tv_everywhere",
+            "link": "http://tvgo.xfinity.com/live/network/amc",
+            "link_type": "web"
+          }
+        ],
+        "ios": [
+          {
+            "source": "amc",
+            "display_name": "AMC",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.amc.com/livestream",
+            "link_type": "ios",
+            "app_name": "AMC",
+            "app_link": 1,
+            "app_required": 1,
+            "app_download_link": "itms-apps://itunes.apple.com/app/amc-latest-full-episodes-extras/id1025120568"
+          }
+        ],
+        "android": [
+          {
+            "source": "amc",
+            "display_name": "AMC",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.amc.com/livestream",
+            "link_type": "android",
+            "app_name": "AMC",
+            "app_link": 0,
+            "app_required": 0,
+            "app_download_link": "https://play.google.com/store/apps/details?id=com.amctve.amcfullepisodes"
+          }
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "name": "Teen Nick",
+      "short_name": "teen_nick",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/022615/thumbnails_small/49-5250129472-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/022615/thumbnails_medium/49-1496200888-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/022615/thumbnails_large/49-6789168245-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/022615/thumbnails_xlarge/49-440574997-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0467568",
+        "wikipedia_id": 47548771
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 140482765961958,
+          "link": "https://www.facebook.com/TeenNick"
+        },
+        "twitter": {
+          "twitter_id": 21278893,
+          "link": "https://twitter.com/teennick"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 50,
+      "name": "Animal Planet",
+      "short_name": "animal_planet",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/50-3492948725-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/50-7265278194-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/50-4902344062-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/50-11118693-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0038145",
+        "wikipedia_id": 406672
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 8059908374,
+          "link": "https://www.facebook.com/AnimalPlanet"
+        },
+        "twitter": {
+          "twitter_id": 8283082,
+          "link": "https://twitter.com/animalplanet"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 51,
+      "name": "BET",
+      "short_name": "bet",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/51-7317278208-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/51-6427016468-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/51-7150153629-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/51-5904782857-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0050878",
+        "wikipedia_id": 244098
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 42324160403,
+          "link": "https://www.facebook.com/BET"
+        },
+        "twitter": {
+          "twitter_id": 16560657,
+          "link": "https://twitter.com/BET"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 52,
+      "name": "Cartoon Network",
+      "short_name": "cartoon_network",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/52-2865738389-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/52-3453783486-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/52-4689168213-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/52-6574340267-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0005780",
+        "wikipedia_id": 17279743
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 84917688371,
+          "link": "https://www.facebook.com/CartoonNetwork"
+        },
+        "twitter": {
+          "twitter_id": 21308602,
+          "link": "https://twitter.com/cartoonnetwork"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "cartoon_network",
+            "display_name": "Cartoon Network",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.cartoonnetwork.com/livetv/",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 53,
+      "name": "Soapnet",
+      "short_name": "soapnet",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/53-3170892578-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/53-253634924-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/53-9589456194-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/53-6470271638-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0003772",
+        "wikipedia_id": 751787
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": 6203972,
+          "link": "https://twitter.com/soapnet"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 54,
+      "name": "CMT",
+      "short_name": "cmt",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/54-6076712790-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/54-4050376914-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/54-6687986995-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/54-334671420-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0084871",
+        "wikipedia_id": 928899
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 12688553195,
+          "link": "https://www.facebook.com/cmt"
+        },
+        "twitter": {
+          "twitter_id": 14663955,
+          "link": "https://twitter.com/cmt"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 55,
+      "name": "CNBC",
+      "short_name": "cnbc",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/55-3180391183-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/55-9629431134-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/55-989180608-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/55-9827240980-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0014503",
+        "wikipedia_id": 223441
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 97212224368,
+          "link": "https://www.facebook.com/cnbc"
+        },
+        "twitter": {
+          "twitter_id": 20402945,
+          "link": "https://twitter.com/CNBC"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "cnbc_tveverywhere",
+            "display_name": "CNBC",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.cnbc.com/live-tv/",
+            "link_type": "web"
+          },
+          {
+            "source": "xfinity_tveverywhere",
+            "display_name": "Xfinity",
+            "tv_channel": "CNBC",
+            "type": "tv_everywhere",
+            "link": "http://tvgo.xfinity.com/live/network/cnbc",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 56,
+      "name": "MSNBC",
+      "short_name": "msnbc",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/56-8102803905-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/56-4278222444-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/56-6200114721-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/56-7278612270-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0108351",
+        "wikipedia_id": 159846
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 273864989376427,
+          "link": "https://www.facebook.com/msnbc"
+        },
+        "twitter": {
+          "twitter_id": 2836421,
+          "link": "https://twitter.com/MSNBC"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "msnbc_tveverywhere",
+            "display_name": "MSNBC",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://now.msnbc.com/",
+            "link_type": "web"
+          },
+          {
+            "source": "xfinity_tveverywhere",
+            "display_name": "Xfinity",
+            "tv_channel": "MSNBC",
+            "type": "tv_everywhere",
+            "link": "http://tvgo.xfinity.com/live/network/msnbc",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 57,
+      "name": "DIY",
+      "short_name": "diy",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/57-4501901995-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/57-6697972119-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/57-4189524953-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/57-9647230044-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0094220",
+        "wikipedia_id": 3322713
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 50970857411,
+          "link": "https://www.facebook.com/DIYNetwork"
+        },
+        "twitter": {
+          "twitter_id": 27687672,
+          "link": "https://twitter.com/diynetwork"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 58,
+      "name": "E",
+      "short_name": "e",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/58-7315118969-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/58-3093473409-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/58-8596667712-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/58-8024607338-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0022548",
+        "wikipedia_id": 528107
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 139109929439137,
+          "link": "https://www.facebook.com/eentertainment"
+        },
+        "twitter": {
+          "twitter_id": 2883841,
+          "link": "https://twitter.com/eonline"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "e_tveverywhere",
+            "display_name": "E!",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.eonline.com/now/live",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 59,
+      "name": "Fearnet",
+      "short_name": "fearnet",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/59-7761218170-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/59-4305660129-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/59-2436483153-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/59-8666491992-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0210551",
+        "wikipedia_id": 9435303
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 60,
+      "name": "Fox Business",
+      "short_name": "fox_business",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/60-3310799031-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/60-1808839212-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/60-1587496261-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/60-1958443947-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0258754",
+        "wikipedia_id": 9395235
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 12795435237,
+          "link": "https://www.facebook.com/FoxBusiness"
+        },
+        "twitter": {
+          "twitter_id": 56413858,
+          "link": "https://twitter.com/foxbusiness"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "fox_business_tveverywhere",
+            "display_name": "FOX Business",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://video.foxbusiness.com/v/1251429410001/fox-business-network/#sp=watch-live",
+            "link_type": "web"
+          },
+          {
+            "source": "xfinity_tveverywhere",
+            "display_name": "Xfinity",
+            "tv_channel": "Fox Business",
+            "type": "tv_everywhere",
+            "link": "http://tvgo.xfinity.com/live/network/foxbusiness",
+            "link_type": "web"
+          }
+        ],
+        "ios": [
+          {
+            "source": "fox_business_tveverywhere",
+            "display_name": "FOX Business",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://video.foxbusiness.com/v/1251429410001/fox-business-network/#sp=watch-live",
+            "link_type": "ios",
+            "app_name": "FOX Business",
+            "app_link": 0,
+            "app_required": 0,
+            "app_download_link": "itms-apps://itunes.apple.com/app/fox-business/id333177961"
+          }
+        ],
+        "android": [
+          {
+            "source": "fox_business_tveverywhere",
+            "display_name": "FOX Business",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://video.foxbusiness.com/v/1251429410001/fox-business-network/#sp=watch-live",
+            "link_type": "android",
+            "app_name": "FOX Business",
+            "app_link": 0,
+            "app_required": 0,
+            "app_download_link": "https://play.google.com/store/apps/details?id=com.twoergo.foxbusiness"
+          }
+        ]
+      }
+    },
+    {
+      "id": 61,
+      "name": "G4",
+      "short_name": "g4",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/61-9345516413-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/61-1925212681-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/61-4573058686-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/61-3893185039-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0230238",
+        "wikipedia_id": 572831
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 62,
+      "name": "Galavision",
+      "short_name": "galavision",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/62-7083663419-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/62-2415661002-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/62-243202369-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/62-482820999-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0001641",
+        "wikipedia_id": 2293895
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 197965920245399,
+          "link": "https://www.facebook.com/Galavision"
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 63,
+      "name": "IFC",
+      "short_name": "ifc",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/63-7185590355-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/63-4418764459-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/63-1971748993-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/63-8509457358-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0046530",
+        "wikipedia_id": 925777
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 19557566476,
+          "link": "https://www.facebook.com/IFC"
+        },
+        "twitter": {
+          "twitter_id": 27942809,
+          "link": "https://twitter.com/IFC"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "ifc",
+            "display_name": "IFC",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.ifc.com/watch-now/stream",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 65,
+      "name": "Natgeo Wild",
+      "short_name": "natgeo_wild",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/65-6353285275-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/65-621641628-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/65-9369633169-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/65-6538075176-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0286617",
+        "wikipedia_id": 10515819
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 196008660929,
+          "link": "https://www.facebook.com/natgeowild"
+        },
+        "twitter": {
+          "twitter_id": 85839993,
+          "link": "https://twitter.com/natgeowild"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 66,
+      "name": "Speed",
+      "short_name": "speed",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/66-5422930606-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/66-6739908876-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/66-7616983456-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/66-9908255874-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0124424",
+        "wikipedia_id": 889234
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 36796456051,
+          "link": "https://www.facebook.com/speed"
+        },
+        "twitter": {
+          "twitter_id": 54060157,
+          "link": "https://twitter.com/SPEED"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 67,
+      "name": "TV Guide",
+      "short_name": "tv_guide",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/67-9658703440-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/67-3589265803-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/67-6082367301-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/67-4172784835-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 80415657792,
+          "link": "https://www.facebook.com/TVGuide"
+        },
+        "twitter": {
+          "twitter_id": 11350892,
+          "link": "https://twitter.com/TVGuide"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 68,
+      "name": "Encore",
+      "short_name": "encore",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/68-7788397586-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/68-4613216263-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/68-4139980865-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/68-6592099173-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0002342",
+        "wikipedia_id": 1912402
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 1431574823782032,
+          "link": "https://www.facebook.com/EncoreChannels"
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 69,
+      "name": "Cinemax",
+      "short_name": "cinemax",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/69-36060848-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/69-1006214531-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/69-1490889457-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/69-7415658394-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0057633",
+        "wikipedia_id": 179166
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 112973734255,
+          "link": "https://www.facebook.com/cinemax"
+        },
+        "twitter": {
+          "twitter_id": 44908912,
+          "link": "https://twitter.com/cinemax"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 70,
+      "name": "Food",
+      "short_name": "food",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/70-2732885075-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/70-1045921240-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/70-7868327587-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/70-2867493872-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0078256",
+        "wikipedia_id": 616842
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 20534666726,
+          "link": "https://www.facebook.com/FoodNetwork"
+        },
+        "twitter": {
+          "twitter_id": 20710809,
+          "link": "https://twitter.com/FoodNetwork"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 71,
+      "name": "Golf",
+      "short_name": "golf",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/71-3649288556-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/71-4803782385-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/71-4691647454-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/71-9570198864-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0119626",
+        "wikipedia_id": 1552105
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 42809541675,
+          "link": "https://www.facebook.com/GolfChannel"
+        },
+        "twitter": {
+          "twitter_id": 28349128,
+          "link": "https://twitter.com/GolfChannel"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 72,
+      "name": "Hallmark",
+      "short_name": "hallmark",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/72-8719414239-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/72-813030098-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/72-3370706262-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/72-6611275929-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0062449",
+        "wikipedia_id": 921055
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 61962206049,
+          "link": "https://www.facebook.com/hallmarkchannel"
+        },
+        "twitter": {
+          "twitter_id": 25453312,
+          "link": "https://twitter.com/hallmarkchannel"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 73,
+      "name": "OWN",
+      "short_name": "own",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/73-202928521-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/73-4130969131-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/73-2254882567-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/73-5466403579-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0229287",
+        "wikipedia_id": 15236947
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 119068338119500,
+          "link": "https://www.facebook.com/ownTV"
+        },
+        "twitter": {
+          "twitter_id": 182161200,
+          "link": "https://twitter.com/OWNTV"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 74,
+      "name": "Smithsonian",
+      "short_name": "smithsonian",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/74-2676048489-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/74-3749377141-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/74-7678250381-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/74-914745359-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0275579",
+        "wikipedia_id": 11992375
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 74671163356,
+          "link": "https://www.facebook.com/SmithsonianChannel"
+        },
+        "twitter": {
+          "twitter_id": 53518563,
+          "link": "https://twitter.com/smithsonianchan"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 75,
+      "name": "Sundance",
+      "short_name": "sundance",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/75-6867816374-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/75-2575015170-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/75-3999874927-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/75-6307829274-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0490233",
+        "wikipedia_id": 1991498
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 7959916687,
+          "link": "https://www.facebook.com/SundanceTV"
+        },
+        "twitter": {
+          "twitter_id": 54964162,
+          "link": "https://twitter.com/SundanceTV"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "sundance_tveverywhere",
+            "display_name": "Sundance",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.sundance.tv/watch-now/stream/",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 76,
+      "name": "Style",
+      "short_name": "style",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/76-3905414334-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/76-8868157621-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/76-2335877274-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/76-9567975727-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0093726",
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 313437158720053,
+          "link": "https://www.facebook.com/StyleNetwork"
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 77,
+      "name": "Travel",
+      "short_name": "travel",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/77-3135651890-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/77-6676402590-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/77-5833424991-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/77-8117829328-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0042601",
+        "wikipedia_id": 925632
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 15672033850,
+          "link": "https://www.facebook.com/TravelChannel"
+        },
+        "twitter": {
+          "twitter_id": 14363353,
+          "link": "https://twitter.com/travelchannel"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 78,
+      "name": "TV One",
+      "short_name": "tv_one",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/78-3524565729-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/78-5651258542-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/78-6864005155-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/78-5226838277-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0118331",
+        "wikipedia_id": 4825701
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 166749975559,
+          "link": "https://www.facebook.com/tvonetv"
+        },
+        "twitter": {
+          "twitter_id": 23585395,
+          "link": "https://twitter.com/tvonetv"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 79,
+      "name": "WE",
+      "short_name": "we",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/79-6808132757-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/79-8911434887-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/79-7417892418-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/79-8776718606-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0208577",
+        "wikipedia_id": 231184
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 27124644923,
+          "link": "https://www.facebook.com/WEtv"
+        },
+        "twitter": {
+          "twitter_id": 16113773,
+          "link": "https://twitter.com/WEtv"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "we_tveverywhere",
+            "display_name": "WE tv",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.wetv.com/full-episodes/wetv-live",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 80,
+      "name": "WWE",
+      "short_name": "wwe",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/80-2443466415-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/80-1485492019-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/80-1181861731-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/80-3650857150-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0158860",
+        "wikipedia_id": 32086367
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 143802942380921,
+          "link": "https://www.facebook.com/WWENetwork"
+        },
+        "twitter": {
+          "twitter_id": 368703433,
+          "link": "https://twitter.com/WWENetwork"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 81,
+      "name": "Tr3s",
+      "short_name": "tr3s",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/81-8348406469-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/81-6017949618-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/81-9488870580-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/81-1428297661-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0395004",
+        "wikipedia_id": 6846416
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 16223189348,
+          "link": "https://www.facebook.com/tr3s"
+        },
+        "twitter": {
+          "twitter_id": 23624581,
+          "link": "https://twitter.com/tr3s"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 82,
+      "name": "Bloomberg",
+      "short_name": "bloomberg",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/82-9322917261-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/82-7626832821-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/82-4327867469-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/82-7574333474-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0318910",
+        "wikipedia_id": 1974777
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 266790296879,
+          "link": "https://www.facebook.com/bloombergbusiness"
+        },
+        "twitter": {
+          "twitter_id": 35002876,
+          "link": "https://twitter.com/BloombergTV"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "bloomberg",
+            "display_name": "Bloomberg",
+            "type": "free",
+            "link": "http://www.bloomberg.com/tv/",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 83,
+      "name": "Beliefnet",
+      "short_name": "beliefnet",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/83-1064730832-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/83-298840106-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/83-1900097658-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/83-7826498290-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 85,
+      "name": "Ovation",
+      "short_name": "ovation",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/85-3417259646-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/85-3817970525-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/85-9687992180-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/85-7164802258-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0201022",
+        "wikipedia_id": 5199649
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": 23527299,
+          "link": "https://twitter.com/ovationtv"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 86,
+      "name": "ID",
+      "short_name": "id",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/86-9302725279-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/86-4531263560-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/86-9658832480-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/86-8691132562-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0225421",
+        "wikipedia_id": 2763655
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 126250704901,
+          "link": "https://www.facebook.com/InvestigationDiscovery"
+        },
+        "twitter": {
+          "twitter_id": 21345455,
+          "link": "https://twitter.com/DiscoveryID"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 87,
+      "name": "TLC",
+      "short_name": "tlc",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/87-4921220033-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/87-5769948135-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/87-5333261578-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/87-3116252460-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0072554",
+        "wikipedia_id": 235107
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 32536990172,
+          "link": "https://www.facebook.com/TLC"
+        },
+        "twitter": {
+          "twitter_id": 21313855,
+          "link": "https://twitter.com/TLC"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 88,
+      "name": "TBN",
+      "short_name": "tbn",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 348486
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 137855609584310,
+          "link": "https://www.facebook.com/trinitybroadcastingnetwork"
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 89,
+      "name": "Mojo",
+      "short_name": "mojo",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/89-8366846600-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/89-3138300204-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/89-9472142159-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/89-4341492793-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 579646
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 90,
+      "name": "Nick Jr.",
+      "short_name": "nick_jr",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/90-803660378-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/90-6812761114-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/90-5288804187-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/90-8991537788-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0301237",
+        "wikipedia_id": 47540867
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 182860052846,
+          "link": "https://www.facebook.com/NickJr"
+        },
+        "twitter": {
+          "twitter_id": 93936628,
+          "link": "https://twitter.com/nickjr"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 91,
+      "name": "BBC World News",
+      "short_name": "bbc_world_news",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 37613
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": 742143,
+          "link": "https://twitter.com/BBCWorld"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 92,
+      "name": "Military Channel",
+      "short_name": "military_channel",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/92-6620653621-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/92-2501828480-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/92-4061788833-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/92-3439443074-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0146203",
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 177548325634,
+          "link": "https://www.facebook.com/AHCTelevision"
+        },
+        "twitter": {
+          "twitter_id": 2249010720,
+          "link": "https://twitter.com/militarychannel"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 93,
+      "name": "CNN",
+      "short_name": "cnn",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/93-4980306253-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/93-2783738245-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/93-595543073-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/93-8469175323-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0165168",
+        "wikipedia_id": 62028
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 5550296508,
+          "link": "https://www.facebook.com/cnn"
+        },
+        "twitter": {
+          "twitter_id": 759251,
+          "link": "https://twitter.com/CNN"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "cnn_tveverywhere",
+            "display_name": "CNN",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.cnn.com/go/?stream=CNN",
+            "link_type": "web"
+          },
+          {
+            "source": "xfinity_tveverywhere",
+            "display_name": "Xfinity",
+            "tv_channel": "CNN",
+            "type": "tv_everywhere",
+            "link": "http://tvgo.xfinity.com/live/network/cnn",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 94,
+      "name": "FOX News",
+      "short_name": "fox_news",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/94-119072851-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/94-5232066326-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/94-9135918188-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/94-9242781857-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0085044",
+        "wikipedia_id": 11121
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 15704546335,
+          "link": "https://www.facebook.com/FoxNews"
+        },
+        "twitter": {
+          "twitter_id": 1367531,
+          "link": "https://twitter.com/FoxNews"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "fox_news_tveverywhere",
+            "display_name": "FOX News",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://video.foxnews.com/v/1241186546001/fox-news-channel/#sp=watch-live",
+            "link_type": "web"
+          },
+          {
+            "source": "xfinity_tveverywhere",
+            "display_name": "Xfinity",
+            "tv_channel": "Fox News",
+            "type": "tv_everywhere",
+            "link": "http://tvgo.xfinity.com/live/network/foxnews",
+            "link_type": "web"
+          }
+        ],
+        "ios": [
+          {
+            "source": "fox_news_tveverywhere",
+            "display_name": "FOX News",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://video.foxnews.com/v/1241186546001/fox-news-channel/#sp=watch-live",
+            "link_type": "ios",
+            "app_name": "FOX News",
+            "app_link": 0,
+            "app_required": 0,
+            "app_download_link": "itms-apps://itunes.apple.com/app/fox-news/id367623543"
+          }
+        ],
+        "android": [
+          {
+            "source": "fox_news_tveverywhere",
+            "display_name": "FOX News",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://video.foxnews.com/v/1241186546001/fox-news-channel/#sp=watch-live",
+            "link_type": "android",
+            "app_name": "FOX News",
+            "app_link": 0,
+            "app_required": 0,
+            "app_download_link": "https://play.google.com/store/apps/details?id=com.foxnews.android"
+          }
+        ]
+      }
+    },
+    {
+      "id": 95,
+      "name": "ABC News",
+      "short_name": "abc_news",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/95-5898152767-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/95-163283186-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/95-9496330427-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/95-4994044788-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0074648",
+        "wikipedia_id": 318094
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 86680728811,
+          "link": "https://www.facebook.com/abcnews"
+        },
+        "twitter": {
+          "twitter_id": 28785486,
+          "link": "https://twitter.com/abc"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "abc_news",
+            "display_name": "ABC News",
+            "type": "free",
+            "link": "http://abcnews.go.com/video",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 96,
+      "name": "TV Land",
+      "short_name": "tv_land",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/96-6756375730-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/96-1359090307-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/96-134452992-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/96-1150942916-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0094233",
+        "wikipedia_id": 783778
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 180670999898,
+          "link": "https://www.facebook.com/tvland"
+        },
+        "twitter": {
+          "twitter_id": 85399171,
+          "link": "https://twitter.com/tvland"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 99,
+      "name": "Fuel TV",
+      "short_name": "fuel_tv",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/99-2464272795-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/99-2373938156-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/99-7789291031-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/99-7503620968-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0111431",
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 1458922904368177,
+          "link": "https://www.facebook.com/FUELTV"
+        },
+        "twitter": {
+          "twitter_id": 17073,
+          "link": "https://twitter.com/fueltv"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 100,
+      "name": "Anime Network",
+      "short_name": "anime_network",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/100-2740878687-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/100-412137378-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/100-9810469681-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/100-1791499523-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 287748
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 104,
+      "name": "Here",
+      "short_name": "here",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/104-761956466-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/104-7579655521-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/104-2445214661-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/104-6255751368-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0142967",
+        "wikipedia_id": 4743708
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 108,
+      "name": "Cooking Channel",
+      "short_name": "cooking_channel",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/108-6842591357-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/108-384516377-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/108-2639393625-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/108-6303370781-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0310330",
+        "wikipedia_id": 24627657
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 153561472759,
+          "link": "https://www.facebook.com/CookingChannel"
+        },
+        "twitter": {
+          "twitter_id": 80943051,
+          "link": "https://twitter.com/CookingChannel"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 110,
+      "name": "Science",
+      "short_name": "science",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/110-8405952835-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/110-5190413357-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/110-4409485967-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/110-6328084404-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0267805",
+        "wikipedia_id": 2014830
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 14391502916,
+          "link": "https://www.facebook.com/ScienceChannel"
+        },
+        "twitter": {
+          "twitter_id": 16895274,
+          "link": "https://twitter.com/sciencechannel"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 111,
+      "name": "Hub",
+      "short_name": "the_hub",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/111-8455308950-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/111-246322924-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/111-5856863824-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/111-1342323334-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0315892",
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 119249468124144,
+          "link": "https://www.facebook.com/DiscFamily"
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 112,
+      "name": "mun2",
+      "short_name": "mun2",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/112-2066406492-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/112-3835485075-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/112-4932077858-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/112-7675137631-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0139459",
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 113,
+      "name": "AXS TV",
+      "short_name": "axs_tv",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/113-9630465908-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/113-8158391071-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/113-2646981953-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/113-3874936486-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0395984",
+        "wikipedia_id": 1326295
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 5711828167,
+          "link": "https://www.facebook.com/AXSTV"
+        },
+        "twitter": {
+          "twitter_id": 17850787,
+          "link": "https://twitter.com/AXSTV"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 116,
+      "name": "FXX",
+      "short_name": "fxx",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/116-4491258203-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/116-8505876325-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/116-4649180207-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/116-4548652191-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0421362",
+        "wikipedia_id": 31075421
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 407311802691802,
+          "link": "https://www.facebook.com/FXX"
+        },
+        "twitter": {
+          "twitter_id": 1309319478,
+          "link": "https://twitter.com/fxxnetwork"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "fx_tveverywhere",
+            "display_name": "FX",
+            "tv_channel": "FXX",
+            "type": "tv_everywhere",
+            "link": "http://www.fxnetworks.com/live-tv/fxx/fxx",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 117,
+      "name": "ESPN",
+      "short_name": "espn",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/117-4571457286-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/117-429605358-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/117-1926999204-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/117-6310269241-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0040478",
+        "wikipedia_id": 77795
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 104266592953439,
+          "link": "https://www.facebook.com/ESPN"
+        },
+        "twitter": {
+          "twitter_id": 2557521,
+          "link": "https://twitter.com/espn"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/espn/",
+            "link_type": "web"
+          }
+        ],
+        "ios": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/espn/",
+            "link_type": "ios",
+            "app_name": "Watch ESPN",
+            "app_link": 1,
+            "app_required": 1,
+            "app_download_link": "itms-apps://itunes.apple.com/app/watchespn/id429009175"
+          }
+        ],
+        "android": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/espn/",
+            "link_type": "android",
+            "app_name": "Watch ESPN",
+            "app_link": 1,
+            "app_required": 1,
+            "app_download_link": "https://play.google.com/store/apps/details?id=air.WatchESPN"
+          }
+        ]
+      }
+    },
+    {
+      "id": 118,
+      "name": "CBS Sports",
+      "short_name": "cbs_sports",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/118-9936487679-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/118-7397231813-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/118-8807732733-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/118-1653174530-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0422485",
+        "wikipedia_id": 3528411
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 86713232573,
+          "link": "https://www.facebook.com/cbssportsnetwork"
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 119,
+      "name": "BBC",
+      "short_name": "bbc",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/119-4404631960-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/119-453228769-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/119-8446245039-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/119-213485198-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 352308
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 228735667216,
+          "link": "https://www.facebook.com/bbcnews"
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 120,
+      "name": "Al Jazeera America",
+      "short_name": "al_jazeera_america",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/120-4059561761-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/120-6086293161-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/120-7077332781-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/120-593788336-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0442998",
+        "wikipedia_id": 38101404
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 132427453584273,
+          "link": "https://www.facebook.com/AlJazeeraAmerica"
+        },
+        "twitter": {
+          "twitter_id": 1178700896,
+          "link": "https://twitter.com/ajam"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "xfinity_tveverywhere",
+            "display_name": "Xfinity",
+            "tv_channel": "Al Jazeera America",
+            "type": "tv_everywhere",
+            "link": "http://tvgo.xfinity.com/live/network/aljazeeraamerica",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 121,
+      "name": "Esquire",
+      "short_name": "esquire",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/121-9165497352-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/121-8246472454-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/121-6703680307-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/121-4218108915-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0413948",
+        "wikipedia_id": 528111
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 373470799426774,
+          "link": "https://www.facebook.com/EsquireNetwork"
+        },
+        "twitter": {
+          "twitter_id": 22679419,
+          "link": "https://twitter.com/ESQTV"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 122,
+      "name": "WGN America",
+      "short_name": "wgn_america",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/122-2299548900-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/122-3561729947-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/122-2489432437-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/122-9813073123-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0339296",
+        "wikipedia_id": 1464121
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 1618525058371073,
+          "link": "https://www.facebook.com/WGNAmerica"
+        },
+        "twitter": {
+          "twitter_id": 26343913,
+          "link": "https://twitter.com/wgnamerica"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 123,
+      "name": "Velocity",
+      "short_name": "velocity",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/123-5785021041-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/123-6103598624-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/123-9617813178-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/123-7934358106-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0059551",
+        "wikipedia_id": 3620631
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 196413610393596,
+          "link": "https://www.facebook.com/VelocityTV"
+        },
+        "twitter": {
+          "twitter_id": 268363284,
+          "link": "https://twitter.com/velocity"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 125,
+      "name": "Destination America",
+      "short_name": "destination_america",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/125-6756694238-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/125-8023261977-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/125-699633062-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/125-1889100606-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0391202",
+        "wikipedia_id": 2035344
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 199376510163292,
+          "link": "https://www.facebook.com/DestinationAmerica"
+        },
+        "twitter": {
+          "twitter_id": 532286935,
+          "link": "https://twitter.com/destamerica"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 126,
+      "name": "Outdoor Channel",
+      "short_name": "outdoor_channel",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/126-1625166177-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/126-6528616184-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/126-8292077575-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/126-8505585398-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0112251",
+        "wikipedia_id": 3627638
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 39431542883,
+          "link": "https://www.facebook.com/OutdoorChannel"
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 127,
+      "name": "NBC Sports",
+      "short_name": "nbc_sports",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/127-2687768373-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/127-4289843328-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/127-1823586244-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/127-1786104883-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 32642036
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 148133088575385,
+          "link": "https://www.facebook.com/NBCSports"
+        },
+        "twitter": {
+          "twitter_id": 17866834,
+          "link": "https://twitter.com/nbcsn"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 128,
+      "name": "MundoFOX",
+      "short_name": "mundofox",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": 74163076,
+          "link": "https://twitter.com/mundofox_la"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 129,
+      "name": "Canal Sur",
+      "short_name": "canal_sur",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 8515046
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 130,
+      "name": "FOX Sports",
+      "short_name": "fox_sports",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/130-1177210207-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/130-5009836731-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/130-9812952969-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/130-9929555263-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0447568",
+        "wikipedia_id": 1699539
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 112638779551,
+          "link": "https://www.facebook.com/foxsports"
+        },
+        "twitter": {
+          "twitter_id": 16877611,
+          "link": "https://twitter.com/foxsports"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 131,
+      "name": "Sprout",
+      "short_name": "sprout",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/060515/thumbnails_small/131-5437013963-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/060515/thumbnails_medium/131-4600201952-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/060515/thumbnails_large/131-2756142128-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/060515/thumbnails_xlarge/131-6778456778-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 3033528
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 70673957929,
+          "link": "https://www.facebook.com/Sprout"
+        },
+        "twitter": {
+          "twitter_id": 20590970,
+          "link": "https://twitter.com/sproutchannel"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "sprout_now",
+            "display_name": "Sprout Now",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.sproutonline.com/live",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 139,
+      "name": "FYI",
+      "short_name": "fyi",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/139-1639881628-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/139-144237313-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/139-2270707400-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/139-2010450494-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0506947",
+        "wikipedia_id": 809197
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 334832696659288,
+          "link": "https://www.facebook.com/FYI"
+        },
+        "twitter": {
+          "twitter_id": 2241207284,
+          "link": "https://twitter.com/FYI"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 141,
+      "name": "Fuse",
+      "short_name": "fuse",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/141-2834587498-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/141-3344647605-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/141-2822441049-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/141-1211129995-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0132950",
+        "wikipedia_id": 1559851
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 10262075277,
+          "link": "https://www.facebook.com/Fuse"
+        },
+        "twitter": {
+          "twitter_id": 14287830,
+          "link": "https://twitter.com/fusetv"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 142,
+      "name": "ITV",
+      "short_name": "itv",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/142-8886570325-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/142-3684456968-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/142-9264446487-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/142-5157830152-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 212177
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 299803460091,
+          "link": "https://www.facebook.com/itv"
+        },
+        "twitter": {
+          "twitter_id": 86925202,
+          "link": "https://twitter.com/ITV"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 144,
+      "name": "American Heroes Channel",
+      "short_name": "american_heroes_channel",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/144-2754857531-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/144-9125826694-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/144-3526825197-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/144-8413364738-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0478383",
+        "wikipedia_id": 1875163
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 177548325634,
+          "link": "https://www.facebook.com/AHCTelevision"
+        },
+        "twitter": {
+          "twitter_id": 40923348,
+          "link": "https://twitter.com/ahc_tv"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 152,
+      "name": "LMN",
+      "short_name": "lmn",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/152-3786272556-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/152-2573040705-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/152-5339249442-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/152-6001203731-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 30873960
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 10542514979,
+          "link": "https://www.facebook.com/LMN"
+        },
+        "twitter": {
+          "twitter_id": 20265600,
+          "link": "https://twitter.com/lmn"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 155,
+      "name": "MTV2",
+      "short_name": "mtv2",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/155-9504432920-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/155-2896822416-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/155-8044829853-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/155-5419677622-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0005971",
+        "wikipedia_id": 215279
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 387054055873,
+          "link": "https://www.facebook.com/mtv2"
+        },
+        "twitter": {
+          "twitter_id": 112948063,
+          "link": "https://twitter.com/mtv2"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 168,
+      "name": "Disney Junior",
+      "short_name": "disneyjunior",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/168-1043883418-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/168-9060644656-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/168-564727309-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/168-9958823700-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0022105",
+        "wikipedia_id": 27490450
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": 1537492003,
+          "link": "https://twitter.com/disneyjunior"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "watchdisneyjr_tveverywhere",
+            "display_name": "Watch Disney Junior",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://watchdisneyjunior.go.com/live",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 169,
+      "name": "HLN",
+      "short_name": "hln",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/169-9514133338-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/169-593114505-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/169-3567735325-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/169-534637659-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0487010",
+        "wikipedia_id": 323610
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 194285473950861,
+          "link": "https://www.facebook.com/HLN"
+        },
+        "twitter": {
+          "twitter_id": 26282046,
+          "link": "https://twitter.com/HLNTV"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "hln_tveverywhere",
+            "display_name": "HLN",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.cnn.com/go/?stream=HLN",
+            "link_type": "web"
+          },
+          {
+            "source": "xfinity_tveverywhere",
+            "display_name": "Xfinity",
+            "tv_channel": "HLN",
+            "type": "tv_everywhere",
+            "link": "http://tvgo.xfinity.com/live/network/hln",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 170,
+      "name": "Disney XD",
+      "short_name": "disneyxd",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/170-2120252950-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/170-7328147590-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/170-5155683625-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/170-1821398200-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0243675",
+        "wikipedia_id": 29858619
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": 2456918040,
+          "link": "https://twitter.com/disneyxd"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "watchdisneyxd_tveverywhere",
+            "display_name": "Watch Disney XD",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://watchdisneyxd.go.com/live",
+            "link_type": "web"
+          }
+        ],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 171,
+      "name": "Turner Classic Movies",
+      "short_name": "turnerclassicmovies",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/171-4652661053-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/171-8857683343-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/171-9297878388-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/171-396718937-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0011489",
+        "wikipedia_id": 925736
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 57964955395,
+          "link": "https://www.facebook.com/tcmtv"
+        },
+        "twitter": {
+          "twitter_id": 25071402,
+          "link": "https://twitter.com/tcm"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 172,
+      "name": "Discovery Fit and Health",
+      "short_name": "discoveryfitandhealth",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/172-1012394187-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/172-4582474656-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/172-1009242451-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/172-1795563209-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0389407",
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 181,
+      "name": "NBC News",
+      "short_name": "nbcnews",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/181-3165034093-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/181-6723419363-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/181-4661144130-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/181-7612189995-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 155869377766434,
+          "link": "https://www.facebook.com/NBCNews"
+        },
+        "twitter": {
+          "twitter_id": 191915325,
+          "link": "https://twitter.com/nbcnewschannel"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 184,
+      "name": "CBS News",
+      "short_name": "cbsnews",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/184-1961264890-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/184-3471322907-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/184-8388345209-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/184-6202235510-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 359551
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 131459315949,
+          "link": "https://www.facebook.com/CBSNews"
+        },
+        "twitter": {
+          "twitter_id": 15012486,
+          "link": "https://twitter.com/CBSNews"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 203,
+      "name": "NickMom",
+      "short_name": "nickmom",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/091414/thumbnails_small/203-2410763279-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/091414/thumbnails_medium/203-5122400946-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/091414/thumbnails_large/203-7644820315-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/091414/thumbnails_xlarge/203-1914345054-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0397805",
+        "wikipedia_id": 33706706
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": 426706781,
+          "link": "https://twitter.com/nickmom"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 204,
+      "name": "PBS Kids",
+      "short_name": "pbskids",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/091414/thumbnails_small/204-8201997392-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/091414/thumbnails_medium/204-9696903200-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/091414/thumbnails_large/204-7474546707-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/091414/thumbnails_xlarge/204-5389458667-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0171371",
+        "wikipedia_id": 2273561
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 132395747041,
+          "link": "https://www.facebook.com/PBSKIDS"
+        },
+        "twitter": {
+          "twitter_id": 59604142,
+          "link": "https://twitter.com/pbskids"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 214,
+      "name": "Pivot",
+      "short_name": "pivot",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/091414/thumbnails_small/214-1555503505-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/091414/thumbnails_medium/214-1985424981-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/091414/thumbnails_large/214-6670682048-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/091414/thumbnails_xlarge/214-8759478284-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0440512",
+        "wikipedia_id": 39207614
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 578162868870373,
+          "link": "https://www.facebook.com/pivottelevision"
+        },
+        "twitter": {
+          "twitter_id": 1283733338,
+          "link": "https://twitter.com/pivot"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 562,
+      "name": "Weather Channel",
+      "short_name": "weather_channel",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/060515/thumbnails_small/562-8855341863-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/060515/thumbnails_medium/562-3778318372-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/060515/thumbnails_large/562-8797404621-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/060515/thumbnails_xlarge/562-6998769408-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0070248",
+        "wikipedia_id": 77832
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 118071565920,
+          "link": "https://www.facebook.com/TheWeatherChannel"
+        },
+        "twitter": {
+          "twitter_id": 20998647,
+          "link": "https://twitter.com/weatherchannel"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "the_weather_channel_tveverywhere",
+            "display_name": "The Weather Channel",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.weather.com/tv/the-weather-channel-live/video/watch-the-weather-channel-live",
+            "link_type": "web"
+          },
+          {
+            "source": "xfinity_tveverywhere",
+            "display_name": "Xfinity",
+            "tv_channel": "Weather Channel",
+            "type": "tv_everywhere",
+            "link": "http://tvgo.xfinity.com/live/network/theweatherchannel",
+            "link_type": "web"
+          }
+        ],
+        "ios": [
+          {
+            "source": "the_weather_channel_tveverywhere",
+            "display_name": "The Weather Channel",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.weather.com/tv/the-weather-channel-live/video/watch-the-weather-channel-live",
+            "link_type": "ios",
+            "app_name": "The Weather Channel",
+            "app_link": 0,
+            "app_required": 0,
+            "app_download_link": "itms-apps://itunes.apple.com/app/weather-channel-weather.com/id295646461"
+          }
+        ],
+        "android": [
+          {
+            "source": "the_weather_channel_tveverywhere",
+            "display_name": "The Weather Channel",
+            "tv_channel": null,
+            "type": "tv_everywhere",
+            "link": "http://www.weather.com/tv/the-weather-channel-live/video/watch-the-weather-channel-live",
+            "link_type": "android",
+            "app_name": "The Weather Channel",
+            "app_link": 0,
+            "app_required": 0,
+            "app_download_link": "https://play.google.com/store/apps/details?id=com.weather.Weather"
+          }
+        ]
+      }
+    },
+    {
+      "id": 563,
+      "name": "ESPNU",
+      "short_name": "espnu",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/060515/thumbnails_small/563-753060566-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/060515/thumbnails_medium/563-5131121944-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/060515/thumbnails_large/563-1693594167-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/060515/thumbnails_xlarge/563-9227395663-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0425456",
+        "wikipedia_id": 1648804
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 111270619684,
+          "link": "https://www.facebook.com/ESPNU"
+        },
+        "twitter": {
+          "twitter_id": 23261531,
+          "link": "https://twitter.com/espnu"
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": "ESPNU",
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/espnu/",
+            "link_type": "web"
+          }
+        ],
+        "ios": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": "ESPNU",
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/espnu/",
+            "link_type": "ios",
+            "app_name": "Watch ESPN",
+            "app_link": 1,
+            "app_required": 1,
+            "app_download_link": "itms-apps://itunes.apple.com/app/watchespn/id429009175"
+          }
+        ],
+        "android": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": "ESPNU",
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/espnu/",
+            "link_type": "android",
+            "app_name": "Watch ESPN",
+            "app_link": 1,
+            "app_required": 1,
+            "app_download_link": "https://play.google.com/store/apps/details?id=air.WatchESPN"
+          }
+        ]
+      }
+    },
+    {
+      "id": 795,
+      "name": "Channel 4",
+      "short_name": "channel4",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/120214/thumbnails_small/795-3719670554-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/120214/thumbnails_medium/795-8874578569-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/120214/thumbnails_large/795-5495612309-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/120214/thumbnails_xlarge/795-7124899938-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 6321
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 6622931938,
+          "link": "https://www.facebook.com/Channel4News"
+        },
+        "twitter": {
+          "twitter_id": 183585551,
+          "link": "https://twitter.com/Channel4"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1443,
+      "name": "Channel 5",
+      "short_name": "channel_5",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 28952356
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 155538241132701,
+          "link": "https://www.facebook.com/channel5uk"
+        },
+        "twitter": {
+          "twitter_id": 20427376,
+          "link": "https://twitter.com/channel5_tv"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1445,
+      "name": "BBC One",
+      "short_name": "bbc_one",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 212157
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 470911516262605,
+          "link": "https://www.facebook.com/BBCOne"
+        },
+        "twitter": {
+          "twitter_id": 871686942,
+          "link": "https://twitter.com/BBCOne"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1446,
+      "name": "BBC Two",
+      "short_name": "bbc_two",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 160949
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 413132078795966,
+          "link": "https://www.facebook.com/bbctwo"
+        },
+        "twitter": {
+          "twitter_id": 1586183960,
+          "link": "https://twitter.com/bbctwo"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1447,
+      "name": "BBC Three",
+      "short_name": "bbc_three",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 393289
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 7519460786,
+          "link": "https://www.facebook.com/bbcthree"
+        },
+        "twitter": {
+          "twitter_id": 166215202,
+          "link": "https://twitter.com/bbcthree"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1448,
+      "name": "BBC Four",
+      "short_name": "bbc_four",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 345439
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1450,
+      "name": "BBC Parliament",
+      "short_name": "bbc_parliament",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 393329
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": 76635157,
+          "link": "https://twitter.com/bbcdemlive"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1451,
+      "name": "CBBC",
+      "short_name": "cbbc",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 18952437
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": 1003869415,
+          "link": "https://twitter.com/cbbc"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1452,
+      "name": "CBeebies",
+      "short_name": "cbeebies",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 393295
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 194575130577797,
+          "link": "https://www.facebook.com/cbeebies"
+        },
+        "twitter": {
+          "twitter_id": 281048706,
+          "link": "https://twitter.com/cbeebieshq"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1454,
+      "name": "S4C",
+      "short_name": "s4c",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 177417
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": 26483825,
+          "link": "https://twitter.com/s4c"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1455,
+      "name": "Sky Living",
+      "short_name": "skyliving",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 856495
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": 23420201,
+          "link": "https://twitter.com/SkyLivingHD"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1456,
+      "name": "Sky Arts",
+      "short_name": "skyarts",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 2811894
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 41118841152,
+          "link": "https://www.facebook.com/SkyArtsHD"
+        },
+        "twitter": {
+          "twitter_id": 22147342,
+          "link": "https://twitter.com/skyarts"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1457,
+      "name": "Sky1",
+      "short_name": "sky1",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 392026
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": 36909344,
+          "link": "https://twitter.com/sky1"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1458,
+      "name": "Sky Atlantic",
+      "short_name": "skyatlantic",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 29016413
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 142500782467456,
+          "link": "https://www.facebook.com/SkyAtlantic"
+        },
+        "twitter": {
+          "twitter_id": 197365064,
+          "link": "https://twitter.com/skyatlantic"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1459,
+      "name": "ITV Encore",
+      "short_name": "itvencore",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 41778583
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1461,
+      "name": "CI",
+      "short_name": "ci",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 139075637416,
+          "link": "https://www.facebook.com/CIUK"
+        },
+        "twitter": {
+          "twitter_id": 234760233,
+          "link": "https://twitter.com/childrensitv"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1464,
+      "name": "Sky Sports",
+      "short_name": "skysports",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 30863501
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 10911153761,
+          "link": "https://www.facebook.com/SkySports"
+        },
+        "twitter": {
+          "twitter_id": 19230601,
+          "link": "https://twitter.com/SkySports"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1466,
+      "name": "ITV2",
+      "short_name": "itv2",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 423060
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 133515602233,
+          "link": "https://www.facebook.com/itv2"
+        },
+        "twitter": {
+          "twitter_id": 15439777,
+          "link": "https://twitter.com/itv2"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1467,
+      "name": "GOLD",
+      "short_name": "gold",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 360217
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": 326130577,
+          "link": "https://twitter.com/GoldTVChannel"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1468,
+      "name": "alibi",
+      "short_name": "alibi",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 721619
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": 123929094,
+          "link": "https://twitter.com/Alibi_Channel"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1469,
+      "name": "Nat Geo Wild",
+      "short_name": "natgeowild",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/060515/thumbnails_small/1469-3299935274-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/060515/thumbnails_medium/1469-4156715502-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/060515/thumbnails_large/1469-4528651652-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/060515/thumbnails_xlarge/1469-6458516698-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0286617",
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 196008660929,
+          "link": "https://www.facebook.com/natgeowild"
+        },
+        "twitter": {
+          "twitter_id": 85839993,
+          "link": "https://twitter.com/natgeowild"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1474,
+      "name": "NBC UNIVERSO",
+      "short_name": "nbc_universo",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": "",
+        "wikipedia_id": 2329474
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 8251861673,
+          "link": "https://www.facebook.com/NBCUNIVERSO"
+        },
+        "twitter": {
+          "twitter_id": 6587402,
+          "link": "https://twitter.com/nbcuniverso"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1477,
+      "name": "POP",
+      "short_name": "pop",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/060515/thumbnails_small/1477-7159555247-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/060515/thumbnails_medium/1477-3377514212-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/060515/thumbnails_large/1477-693096449-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/060515/thumbnails_xlarge/1477-9983296087-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0516796",
+        "wikipedia_id": 655221
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": 112469248837686,
+          "link": "https://www.facebook.com/PopTelevision"
+        },
+        "twitter": {
+          "twitter_id": 296980484,
+          "link": "https://twitter.com/poptv"
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1485,
+      "name": "Nicktoons",
+      "short_name": "nicktoons",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/022615/thumbnails_small/1485-418070839-208x117-channel.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/022615/thumbnails_medium/1485-2359362031-304x171-channel.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/022615/thumbnails_large/1485-9922632053-448x252-channel.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/022615/thumbnails_xlarge/1485-7311398573-608x342-channel.jpg",
+      "external_ids": {
+        "imdb": "co0167426",
+        "wikipedia_id": 925645
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1735,
+      "name": "ESPN2",
+      "short_name": "espn2",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": null,
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": "ESPN2",
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/espn2/",
+            "link_type": "web"
+          }
+        ],
+        "ios": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": "ESPN2",
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/espn2/",
+            "link_type": "ios",
+            "app_name": "Watch ESPN",
+            "app_link": 1,
+            "app_required": 1,
+            "app_download_link": "itms-apps://itunes.apple.com/app/watchespn/id429009175"
+          }
+        ],
+        "android": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": "ESPN2",
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/espn2/",
+            "link_type": "android",
+            "app_name": "Watch ESPN",
+            "app_link": 1,
+            "app_required": 1,
+            "app_download_link": "https://play.google.com/store/apps/details?id=air.WatchESPN"
+          }
+        ]
+      }
+    },
+    {
+      "id": 1737,
+      "name": "ESPN Deportes",
+      "short_name": "espn_deportes",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": null,
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": "ESPN Deportes",
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/espndeportes/",
+            "link_type": "web"
+          }
+        ],
+        "ios": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": "ESPN Deportes",
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/espndeportes/",
+            "link_type": "ios",
+            "app_name": "Watch ESPN",
+            "app_link": 1,
+            "app_required": 1,
+            "app_download_link": "itms-apps://itunes.apple.com/app/watchespn/id429009175"
+          }
+        ],
+        "android": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": "ESPN Deportes",
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/espndeportes/",
+            "link_type": "android",
+            "app_name": "Watch ESPN",
+            "app_link": 1,
+            "app_required": 1,
+            "app_download_link": "https://play.google.com/store/apps/details?id=air.WatchESPN"
+          }
+        ]
+      }
+    },
+    {
+      "id": 1738,
+      "name": "SEC Network",
+      "short_name": "sec_network",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": null,
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": "SEC Network",
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/sec/",
+            "link_type": "web"
+          }
+        ],
+        "ios": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": "SEC Network",
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/sec/",
+            "link_type": "ios",
+            "app_name": "Watch ESPN",
+            "app_link": 1,
+            "app_required": 1,
+            "app_download_link": "itms-apps://itunes.apple.com/app/watchespn/id429009175"
+          }
+        ],
+        "android": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": "SEC Network",
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/sec/",
+            "link_type": "android",
+            "app_name": "Watch ESPN",
+            "app_link": 1,
+            "app_required": 1,
+            "app_download_link": "https://play.google.com/store/apps/details?id=air.WatchESPN"
+          }
+        ]
+      }
+    },
+    {
+      "id": 1739,
+      "name": "ESPNews",
+      "short_name": "espnews",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": null,
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": "ESPNews",
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/espnews/",
+            "link_type": "web"
+          }
+        ],
+        "ios": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": "ESPNews",
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/espnews/",
+            "link_type": "ios",
+            "app_name": "Watch ESPN",
+            "app_link": 1,
+            "app_required": 1,
+            "app_download_link": "itms-apps://itunes.apple.com/app/watchespn/id429009175"
+          }
+        ],
+        "android": [
+          {
+            "source": "watch_espn",
+            "display_name": "Watch ESPN",
+            "tv_channel": "ESPNews",
+            "type": "tv_everywhere",
+            "link": "http://espn.go.com/watchespn/player/_/channel/espnews/",
+            "link_type": "android",
+            "app_name": "Watch ESPN",
+            "app_link": 1,
+            "app_required": 1,
+            "app_download_link": "https://play.google.com/store/apps/details?id=air.WatchESPN"
+          }
+        ]
+      }
+    },
+    {
+      "id": 1744,
+      "name": "Discovery Life",
+      "short_name": "discovery_life",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": null,
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1754,
+      "name": "VICELAND",
+      "short_name": "viceland",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": null,
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1764,
+      "name": "Epix",
+      "short_name": "epix",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": null,
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1765,
+      "name": "Big Ten Network",
+      "short_name": "big_ten_network",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": null,
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1766,
+      "name": "Bounce TV",
+      "short_name": "bounce_tv",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": null,
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    },
+    {
+      "id": 1767,
+      "name": "Paramount Network",
+      "short_name": "paramount_network",
+      "channel_type": "television",
+      "artwork_208x117": "http://static-api.guidebox.com/misc/default_channel_208x117.jpg",
+      "artwork_304x171": "http://static-api.guidebox.com/misc/default_channel_304x171.jpg",
+      "artwork_448x252": "http://static-api.guidebox.com/misc/default_channel_448x252.jpg",
+      "artwork_608x342": "http://static-api.guidebox.com/misc/default_channel_608x342.jpg",
+      "external_ids": {
+        "imdb": null,
+        "wikipedia_id": null
+      },
+      "social": {
+        "facebook": {
+          "facebook_id": null,
+          "link": null
+        },
+        "twitter": {
+          "twitter_id": null,
+          "link": null
+        }
+      },
+      "live_stream": {
+        "web": [],
+        "ios": [],
+        "android": []
+      }
+    }
+  ]
+}

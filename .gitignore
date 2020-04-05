@@ -70,3 +70,6 @@ typings/
 .DS_Store
 
 package-lock.json
+
+# Config directory
+config/

@@ -11,6 +11,7 @@ const episodesRouter = require('./routes/episodes');
 const moviesRouter = require('./routes/movies');
 const subscriptionsRouter = require('./routes/subscriptions');
 const settingsRouter = require('./routes/settings');
+const guideboxTestingRouter = require('./routes/guideboxTesting');
 
 const app = express();
 
@@ -28,5 +29,6 @@ app.use('/subscriptions', subscriptionsRouter);
 app.use('/settings', settingsRouter);
 app.use('/movies', moviesRouter);
 app.use('/episodes', episodesRouter);
+app.use('/guideboxTesting', guideboxTestingRouter);
 
 module.exports = app;
