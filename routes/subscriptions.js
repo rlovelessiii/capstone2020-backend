@@ -6,7 +6,7 @@ const router = express.Router();
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 
-const database = new sqlite.Database('./database/subscriptions.db');
+const database = new sqlite.Database('./database/channels.db');
 
 const createSubscriptionsTable = () => {
     const query = `
@@ -24,7 +24,7 @@ router.get('/', function(req, res, next) {
 });
 
 /**
- * A post request to /subscriptions will return a list of subscriptions for the user
+ * A post request to /channels will return a list of channels for the user
  * Requires Post param of id, representing the userID
  */
 router.post('/', function(req, res, next) {
@@ -44,7 +44,7 @@ router.post('/', function(req, res, next) {
 });
 
 /**
- * A post request to /subscriptions will insert a row in the subscription table for the user
+ * A post request to /channels will insert a row in the subscription table for the user
  * with the id of id and provider of provider
  */
 router.put('/', function(req, res, next) {
@@ -62,7 +62,7 @@ router.put('/', function(req, res, next) {
 });
 
 /**
- * A delete request to /subscriptions/:id/:provider will delete the provide from the user
+ * A delete request to /channels/:id/:provider will delete the provide from the user
  */
 router.delete('/:id/:provider', function(req, res, next) {
     let sql = `DELETE FROM subscriptions

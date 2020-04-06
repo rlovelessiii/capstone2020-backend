@@ -5,24 +5,25 @@ const guidebox = require('../modules/guidebox');
 const API_KEY = require('../config/config.json').guidebox_api_key;
 const router = express.Router();
 
-router.use(bodyParser.urlencoded({ extended: false }));
+router.use(bodyParser.urlencoded({extended: false}));
 router.use(bodyParser.json());
 
 guidebox.init(API_KEY);
 
-router.get('/', function(req, res, next) {
+router.get('/', function (req, res, next) {
   res.send('Guidebox Module Testing');
 });
 
 router.get('/shows/all', (req, res) => {
-   guidebox.shows.all('all', '750', '250', 'purchase', 'all', '', (err, response, results) => {
-     console.log('Calls to the API so far => ' + response.caseless.dict['guidebox-quota']);
-     const data = JSON.stringify(results);
-     fs.writeFile('./data/shows/purchase3.json', data, (err) => {
-       console.log(err);
-     });
-     res.send(results);
-   });
+  const tag = 'adventure';
+  guidebox.shows.all('all', '0', '250', '', 'all', tag, (err, response, results) => {
+    console.log('Calls to the API so far => ' + response.caseless.dict['guidebox-quota']);
+    const data = JSON.stringify(results);
+    fs.writeFile('./data/shows/genres/' + tag + '.json', data, (err) => {
+      console.log(err);
+    });
+    res.send(results);
+  });
 });
 
 router.get('/shows/id', (req, res) => {
@@ -58,10 +59,10 @@ router.get('/episodes/images', (req, res) => {
 });
 
 router.get('/movies/all', (req, res) => {
-  guidebox.movies.all('750', '250', 'netflix', 'all', 'true', 'true', (err, response, results) => {
+  guidebox.movies.all('750', '250', 'purchase', 'all', 'false', 'false', (err, response, results) => {
     console.log('Calls to the API so far => ' + response.caseless.dict['guidebox-quota']);
     const data = JSON.stringify(results);
-    fs.writeFile('./data/movies/subscriptions/netflix3.json', data, (err) => {
+    fs.writeFile('./data/movies/purchase3.json', data, (err) => {
       console.log(err);
     });
     res.send(results);
@@ -115,11 +116,25 @@ router.get('/sources', (req, res) => {
 });
 
 router.get('/genres', (req, res) => {
-  guidebox.genres();
+  guidebox.genres((err, response, results) => {
+    console.log('Calls to the API so far => ' + response.caseless.dict['guidebox-quota']);
+    const data = JSON.stringify(results);
+    fs.writeFile('./data/genres.json', data, (err) => {
+      console.log(err);
+    });
+    res.send(results);
+  });
 });
 
 router.get('/tags', (req, res) => {
-  guidebox.tags();
+  guidebox.tags('0', '1000', (err, response, results) => {
+    console.log('Calls to the API so far => ' + response.caseless.dict['guidebox-quota']);
+    const data = JSON.stringify(results);
+    fs.writeFile('./data/tags.json', data, (err) => {
+      console.log(err);
+    });
+    res.send(results);
+  });
 });
 
 router.get('/person/details', (req, res) => {

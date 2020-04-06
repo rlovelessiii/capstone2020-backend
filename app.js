@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/shows', showsRouter);
-app.use('/subscriptions', subscriptionsRouter);
+app.use('/channels', subscriptionsRouter);
 app.use('/settings', settingsRouter);
 app.use('/movies', moviesRouter);
 app.use('/episodes', episodesRouter);
