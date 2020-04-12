@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const guidebox = require('../modules/guidebox');
-const API_KEY = require('../config/config.json').guidebox_api_key;
+const API_KEY = require('../config/guidebox.json').guidebox_api_key;
 const router = express.Router();
 
 router.use(bodyParser.urlencoded({extended: false}));

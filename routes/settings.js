@@ -1,36 +1,12 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const sqlite = require('sqlite3').verbose();
-const guidebox = require('../modules/guidebox');
-const router = express.Router();
+const express = require('express')
+const bodyParser = require('body-parser')
+const sqlite = require('sqlite3').verbose()
+const router = express.Router()
 
-router.use(bodyParser.urlencoded({ extended: false }));
-router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({ extended: false }))
+router.use(bodyParser.json())
 
-const database = new sqlite.Database('./database/settings.db');
-
-let settings_parameters = {
-  channel: '',
-  sources: '',
-  platform: '',
-  include_preorders: '',
-  include_in_theaters: '',
-  type: ''
-};
-
-const filterDefaultParameters = (user_id, callback) => {
-  guidebox.getDefaultParamValues((values) => {
-    callback([
-      user_id,
-      values.channel,
-      values.channel,
-      values.sources,
-      values.platform,
-      values.include_preorders,
-      values.include_in_theaters,
-    ]);
-  });
-};
+const database = new sqlite.Database('./database/settings.db')
 
 const createBrowseTable = () => {
   const query = `
@@ -38,77 +14,171 @@ const createBrowseTable = () => {
     id integer PRIMARY KEY,
     user_id integer UNIQUE,
     channelList text,
-    channels text,
-    sources text,
-    platforms text,
     include_preorders text,
-    include_in_theaters text)`;
-  return database.run(query);
-};
+    include_in_theaters text)`
+  return database.run(query)
+}
 
-const findSettingsById = (user_id, callback) => {
+const createOptionTable = () => {
+  const query = `
+    CREATE TABLE IF NOT EXISTS option (
+    id integer PRIMARY KEY,
+    user_id integer,
+    type text,
+    title text,
+    value text)`
+  return database.run(query)
+}
+
+const findBrowseSettingsById = (user_id, callback) => {
   return database.get(`SELECT * FROM browse WHERE user_id = ?`, user_id, (error, row) => {
-    callback(error, row);
+    callback(error, row)
   })
-};
+}
 
-const createUserSettings = (settings, callback) => {
-  return database.run(`INSERT INTO browse (user_id, channelList, channels, sources, platforms, include_preorders, include_in_theaters) VALUES (?, ?, ?, ?, ?, ?, ?)`, settings, (error) => {
-    callback(error);
+const findOptionSettingsById = (user_id, callback) => {
+  return database.all(`SELECT * FROM option WHERE user_id = ?`, user_id, (error, row) => {
+    row.forEach(result => {
+      console.log(result)
+    })
+    callback(error, row)
   })
-};
+}
 
-const updateUserSettings = (col, setting, callback) => {
+const createBrowseSettings = (settings, callback) => {
+  return database.run(`INSERT INTO browse (user_id, channelList, include_preorders, include_in_theaters) VALUES (?, ?, ?, ?)`, settings, (error) => {
+    callback(error)
+  })
+}
+
+const createOptionSetting = (user_id, type, option, callback) => {
+  return database.run(`INSERT INTO option (user_id, type, title, value) VALUES (?, ?, ?, ?)`, [user_id, type, option.title, option.value], (error) => {
+    callback(error)
+  })
+}
+
+const updateBrowseSettings = (col, setting, callback) => {
   return database.run(`UPDATE browse SET ` + col + ` = ? WHERE id = ?`, setting, (error) => {
-    callback(error);
+    callback(error)
   })
-};
+}
 
-createBrowseTable();
-
-router.get('/browse', (req, res) => {
-});
-
-router.post('/browse', (req, res) => {
-  const user_id = req.body.userId;
-  console.log(user_id);
-  findSettingsById(user_id, (error, settings) => {
-    if (error) return res.status(500).send('Server Error');
-    if (!settings) {
-      filterDefaultParameters(user_id, (filtered_settings) => {
-        console.log(filtered_settings);
-        createUserSettings(filtered_settings, (error) => {
-          if (error) {
-            if (error.errno === 19)
-              return res.status(409).send('User settings already entered!');
-            return res.status(500).send('Server Error!');
-          }
-          findSettingsById(user_id, (error, settings) => {
-            if (error) return res.status(500).send('Server Error');
-            if (!settings) return res.status(404).send('User settings not found!');
-            res.status(200).send(settings);
-          })
-        })
-      });
-    } else {
-      res.status(200).send(settings);
-    }
+const clearOptionSettings = (user_id, type, callback) => {
+  return database.run(`DELETE FROM option WHERE user_id = ? AND type = ?`, [user_id, type], (error) => {
+    callback(error)
   })
-});
+}
 
-router.post('/update', (req, res) => {
-  const user_id = req.body.userId;
-  const col = req.body.key;
-  const value = req.body.value;
-  console.log(req.body);
-  updateUserSettings(col, [value, user_id], (error) => {
-    if (error) return res.status(500).send('Server Error');
-    findSettingsById(user_id, (error, settings) => {
-      if (error) return res.status(500).send('Server Error');
-      if (!settings) return res.status(404).send('User settings not found!');
-      res.status(200).send(settings);
+createBrowseTable()
+createOptionTable()
+
+const defaultBrowseSettings = (user_id, callback) => {
+  return callback([user_id, 'all', 'true', 'true'])
+}
+
+const defaultOptionSettings = (callback) => {
+  const options = require('../config/config')
+  return callback(options);
+}
+
+const findUserSettings = (user_id, res, callback) => {
+  return findBrowseSettingsById(user_id, (error, settings) => {
+    if (error) handleError(res, error.errno)
+    if (!settings) handleError(res, 'settings')
+    findOptionSettingsById(user_id, (error, options) => {
+      if (error) handleError(res, error.errno)
+      if (!options) handleError(res, 'options')
+      settings.options = options
+      return callback(settings)
     })
   })
-});
+}
+
+const handleError = (res, errorNum) => {
+  switch (errorNum) {
+    case 19: return res.status(409).send('User information already entered')
+    case 'settings': return res.status(404).send('User settings not found!')
+    case 'options': return res.status(404).send('User options not found')
+    default: return res.status(500).send('Server Error')
+  }
+}
+
+
+
+const option_types = ['channel', 'source', 'platform']
+
+router.post('/', (req, res) => {
+  console.log(req.body)
+  const user_id = req.body['userId']
+
+  findBrowseSettingsById(user_id, (error, settings) => {
+    if (error) handleError(res, error.errno)
+    if (!settings) {
+      defaultBrowseSettings(user_id, default_settings => {
+
+        createBrowseSettings(default_settings, error => {
+          if (error) handleError(res, error.errno)
+
+          defaultOptionSettings(default_options => {
+            option_types.forEach(type => {
+              default_options['available_' + type + 's'].forEach(option => {
+                console.log(option);
+                createOptionSetting(user_id, type, option, error => {
+                  if (error) handleError(res, error.errno)
+                })
+              })
+            })
+            findUserSettings(user_id, res, settings => {
+              res.status(200).send(settings)
+            })
+          })
+        })
+      })
+    } else {
+      findOptionSettingsById(user_id, (error, options) => {
+        if (error) handleError(res, error.errno)
+        if (!options) handleError(res, 'options')
+        settings.options = options
+        res.status(200).send(settings)
+      })
+    }
+  })
+})
+
+router.post('/available', (req, res) => {
+  console.log(req.body)
+  const available_options = require('../config/config')
+  res.status(200).send(available_options)
+})
+
+router.post('/browse', (req, res) => {
+  const user_id = req.body['userId']
+  const col = req.body.key
+  const value = req.body.value
+  console.log(req.body)
+  updateBrowseSettings(col, [value, user_id], (error) => {
+    if (error) handleError(res, error.errno)
+    findUserSettings(user_id, res, settings => {
+      res.status(200).send(settings)
+    })
+  })
+})
+
+router.post('/options', (req, res) => {
+  const user_id = req.body['userId']
+  const type = req.body['type']
+  const options = req.body['options']
+  clearOptionSettings(user_id, type, error => {
+    if (error) handleError(res, error.errno)
+    options.forEach(option => {
+      createOptionSetting(user_id, type, option, error => {
+        if (error) handleError(res, error.errno)
+      })
+    })
+    findUserSettings(user_id, res, settings => {
+      res.status(200).send(settings)
+    })
+  })
+})
 
 module.exports = router;

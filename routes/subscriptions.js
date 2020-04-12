@@ -6,7 +6,7 @@ const router = express.Router();
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 
-const database = new sqlite.Database('./database/channels.db');
+const database = new sqlite.Database('./database/subscriptions.db');
 
 const createSubscriptionsTable = () => {
     const query = `

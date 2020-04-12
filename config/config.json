@@ -1,0 +1,64 @@
+{
+  "available_channels": [
+    {
+      "title": "Amazon Prime",
+      "value": "amazon_prime"
+    },
+    {
+      "title": "Apple TV+",
+      "value": "apple_tv_plus"
+    },
+    {
+      "title": "CBS All Access",
+      "value": "cbs_all_access"
+    },
+    {
+      "title": "Disney+",
+      "value": "disney_plus"
+    },
+    {
+      "title": "HBO Now",
+      "value": "hbo_now"
+    },
+    {
+      "title": "Hulu+",
+      "value": "hulu_plus"
+    },
+    {
+      "title": "Netflix",
+      "value": "netflix"
+    }
+  ],
+  "available_sources": [
+    {
+      "title": "Free",
+      "value": "free"
+    },
+    {
+      "title": "TV Everywhere",
+      "value": "tv_everywhere"
+    },
+    {
+      "title": "Subscription",
+      "value": "subscription"
+    },
+    {
+      "title": "Purchase",
+      "value": "purchase"
+    }
+  ],
+  "available_platforms": [
+    {
+      "title": "Web",
+      "value": "web"
+    },
+    {
+      "title": "iOS",
+      "value": "ios"
+    },
+    {
+      "title": "Android",
+      "value": "android"
+    }
+  ]
+}
