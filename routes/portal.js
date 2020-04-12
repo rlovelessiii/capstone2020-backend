@@ -11,20 +11,24 @@ const database = new sqlite.Database('./database/portal.db')
 const createViewsTable = () => {
   const query = `
     CREATE TABLE IF NOT EXISTS views (
-    id integer PRIMARY KEY,
     user_id integer,
-    title_type text,
-    title_id integer)`
+    type text,
+    id integer,
+    title text,
+    image text,
+    show_user text)`
   return database.run(query)
 }
 
 const createWatchedTable = () => {
   const query = `
     CREATE TABLE IF NOT EXISTS watched (
-    id integer PRIMARY KEY,
     user_id integer,
-    title_type text,
-    title_id integer,
+    type text,
+    id integer,
+    title text,
+    watched_image text,
+    resume text,
     season integer,
     episode integer,
     rating number)`
@@ -34,11 +38,12 @@ const createWatchedTable = () => {
 const createSavedTable = () => {
   const query = `
     CREATE TABLE IF NOT EXISTS saved (
-    id integer PRIMARY KEY,
     user_id integer,
-    save_type text,
-    title_type text,
-    title_id integer,`
+    list text,
+    type text,
+    id integer,
+    title text,
+    image text)`
 }
 
 const findViewsById = (user_id, callback) => {
@@ -47,8 +52,8 @@ const findViewsById = (user_id, callback) => {
   })
 }
 
-const findWatchedById = (user_id, callback) => {
-  return database.get(`SELECT * FROM watched WHERE user_id = ?`, user_id, (error, row) => {
+const findWatchedById = (user_id, resume, callback) => {
+  return database.get(`SELECT * FROM watched WHERE user_id = ? AND resume = ?`, [user_id, resume], (error, row) => {
     callback(error, row)
   })
 }
@@ -59,26 +64,34 @@ const findSavedById = (user_id, callback) => {
   })
 }
 
-const addView = (user_id, title_type, title_id, callback) => {
-  return database.get(`INSERT INTO views (user_id, title_type, title_id) VALUES (?, ?, ?)`, [user_id, title_type, title_id], (error) => {
+const addView = (user_id, views_type, views_id, views_title, views_image, callback) => {
+  const query = `INSERT INTO views (user_id, views_type, views_id, views_title, views_image, show_user) VALUES (?, ?, ?, ?, ?, ?)`
+  const values = [user_id, views_type, views_id, views_title, views_image, 'true']
+  return database.get(query, values, (error) => {
     callback(error)
   })
 }
 
-const addWatched = (user_id, title_type, title_id, season, episode, rating, callback) => {
-  return database.get(`INSERT INTO watched (user_id, title_type, title_id, season, episode, rating) VALUES (?, ?, ?, ?, ?, ?)`, [user_id, title_type, title_id], (error) => {
+const addWatched = (user_id, watched_type, watched_id, watched_title, watched_image, resume, season, episode, rating, callback) => {
+  const query = `INSERT INTO watched (user_id, watched_type, watched_id, watched_title, watched_image, resume, season, episode, rating) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+  const values = [user_id, watched_type, watched_id, watched_title, watched_image, season, episode, rating];
+  return database.get(query, values, (error) => {
     callback(error)
   })
 }
 
-const addSaved = (user_id, save_type, title_type, title_id, callback) => {
-  return database.get(`INSERT INTO saved (user_id, save_type, title_type, title_id) VALUES (?, ?, ?, ?)`, [user_id, save_type, title_type, title_id], (error) => {
+const addSaved = (user_id, list_type, saved_type, saved_id, saved_title, saved_image, callback) => {
+  const query = `INSERT INTO saved (user_id, list_type, saved_type, saved_id, saved_title, saved_image) VALUES (?, ?, ?, ?, ?, ?)`
+  const values = [user_id, list_type, saved_type, saved_id, saved_title, saved_image]
+  return database.get(query, values, (error) => {
     callback(error)
   })
 }
 
-const removeSaved = (user_id, save_type, title_type, title_id, callback) => {
-  return database.get(`DELETE FROM saved WHERE user_id = ? AND save_type = ? AND title_type = ? AND title_id = ?`, [user_id, save_type, title_type, title_id], (error) => {
+const removeSaved = (user_id, list_type, saved_type, saved_id, callback) => {
+  const query = `DELETE FROM saved WHERE user_id = ? AND list_type = ? AND saved_type = ? AND saved_id = ?`
+  const values = [user_id, list_type, saved_type, saved_id]
+  return database.get(query, values, (error) => {
     callback (error)
   })
 }
@@ -114,7 +127,7 @@ router.post('/', (req, res) => {
   })
 })
 
-router.get('/views', (req, res) => {
+router.post('/views', (req, res) => {
   console.log(req.body)
 
   const user_id = req.body['userId']
@@ -126,14 +139,16 @@ router.get('/views', (req, res) => {
   })
 })
 
-router.post('/views', (req, res) => {
+router.post('/views/add', (req, res) => {
   console.log(req.body)
 
   const user_id = req.body['userId']
-  const title_type = req.body['titleType']
-  const title_id = req.body['titleId']
+  const views_type = req.body['type']
+  const views_id = req.body['id']
+  const views_title = req.body['title']
+  const views_image = req.body['image']
 
-  addView(user_id, title_type, title_id, (error) => {
+  addView(user_id, views_type, views_id, views_title, views_image, (error) => {
     if (error) handleError(res, error.errno)
     else findViewsById(user_id, (error, views) => {
       if (error) handleError(res, error.errno)
@@ -143,29 +158,33 @@ router.post('/views', (req, res) => {
   })
 })
 
-router.get('/watched', (req, res) => {
+router.post('/watched', (req, res) => {
   console.log(req.body)
 
   const user_id = req.body['userId']
+  const resume = req.body['resume']
 
-  findWatchedById(user_id, (error, watched) => {
+  findWatchedById(user_id, resume, (error, watched) => {
     if (error) handleError(res, error.errno)
     else if (!watched) handleError (res, 'watched')
     else res.status(200).send(watched)
   })
 })
 
-router.post('/watched', (req, res) => {
+router.post('/watched/add', (req, res) => {
   console.log(req.body)
 
   const user_id = req.body['userId']
-  const title_type = req.body['titleType']
-  const title_id = req.body['titleId']
+  const watched_type = req.body['type']
+  const watched_id = req.body['id']
+  const watched_title = req.body['title']
+  const watched_image = req.body['image']
+  const resume = req.body['resume']
   const season = req.body['season']
   const episode = req.body['episode']
   const rating = req.body['rating']
 
-  addWatched(user_id, title_type, title_id, season, episode, rating, (error) => {
+  addWatched(user_id, watched_type, watched_id, watched_title, watched_image, resume, season, episode, rating, (error) => {
     if (error) handleError(res, error.errno)
     else findWatchedById(user_id, (error, watched) => {
       if (error) handleError(res, error.errno)
@@ -176,7 +195,7 @@ router.post('/watched', (req, res) => {
 
 })
 
-router.get('/saved', (req, res) => {
+router.post('/saved', (req, res) => {
   console.log(req.body)
 
   const user_id = req.body['userId']
@@ -188,15 +207,17 @@ router.get('/saved', (req, res) => {
   })
 })
 
-router.post('/saved', (req, res) => {
+router.post('/saved/add', (req, res) => {
   console.log(req.body)
 
   const user_id = req.body['userId']
-  const save_type = req.body['saveType']
-  const title_type = req.body['titleType']
-  const title_id = req.body['titleId']
+  const list_type = req.body['list']
+  const saved_type = req.body['type']
+  const saved_id = req.body['id']
+  const saved_title = req.body['title']
+  const saved_image = req.body['image']
 
-  addSaved(user_id, save_type, title_type, title_id, (error) => {
+  addSaved(user_id, list_type, saved_type, saved_id, saved_title, saved_image, (error) => {
     if (error) handleError(res, error.errno)
     else findSavedById(user_id, (error, saved) => {
       if (error) handleError(res, error.errno)
@@ -206,15 +227,15 @@ router.post('/saved', (req, res) => {
   })
 })
 
-router.delete('/saved', (req, res) => {
+router.post('/saved/remove', (req, res) => {
   console.log(req.body)
 
   const user_id = req.body['userId']
-  const save_type = req.body['saveType']
-  const title_type = req.body['titleType']
-  const title_id = req.body['titleId']
+  const list_type = req.body['list']
+  const saved_type = req.body['type']
+  const saved_id = req.body['id']
 
-  removeSaved(user_id, save_type, title_type, title_id, (error) => {
+  removeSaved(user_id, list_type, saved_type, saved_id, (error) => {
     if (error) handleError(res, error.errno)
     else findSavedById(user_id, (error, saved) => {
       if (error) handleError(res, error.errno)
