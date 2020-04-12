@@ -104,9 +104,6 @@ const handleError = (res, errorNum) => {
 }
 
 
-
-const option_types = ['channel', 'source', 'platform']
-
 router.post('/', (req, res) => {
   console.log(req.body)
   const user_id = req.body['userId']
@@ -118,6 +115,8 @@ router.post('/', (req, res) => {
 
         createBrowseSettings(default_settings, error => {
           if (error) handleError(res, error.errno)
+
+          const option_types = ['channel', 'source', 'platform']
 
           defaultOptionSettings(default_options => {
             option_types.forEach(type => {

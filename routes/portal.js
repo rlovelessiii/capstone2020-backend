@@ -82,3 +82,35 @@ const removeSaved = (user_id, save_type, title_type, title_id, callback) => {
     callback (error)
   })
 }
+
+createViewsTable()
+createWatchedTable()
+createSavedTable()
+
+router.get('/views', (req, res) => {
+  console.log(req.body)
+})
+
+router.post('/views', (req, res) => {
+  console.log(req.body)
+})
+
+router.get('/watched', (req, res) => {
+  console.log(req.body)
+})
+
+router.post('/watched', (req, res) => {
+  console.log(req.body)
+})
+
+router.get('/saved', (req, res) => {
+  console.log(req.body)
+})
+
+router.post('/saved', (req, res) => {
+  console.log(req.body)
+})
+
+router.delete('saved', (req, res) => {
+  console.log(req.body)
+})
