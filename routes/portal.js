@@ -44,53 +44,54 @@ const createSavedTable = () => {
     id integer,
     title text,
     image text)`
+  return database.run(query)
 }
 
 const findViewsById = (user_id, callback) => {
-  return database.get(`SELECT * FROM views WHERE user_id = ?`, user_id, (error, row) => {
+  return database.all(`SELECT * FROM views WHERE user_id = ?`, user_id, (error, row) => {
     callback(error, row)
   })
 }
 
-const findWatchedById = (user_id, resume, callback) => {
-  return database.get(`SELECT * FROM watched WHERE user_id = ? AND resume = ?`, [user_id, resume], (error, row) => {
+const findWatchedById = (user_id, callback) => {
+  return database.all(`SELECT * FROM watched WHERE user_id = ?`, user_id, (error, row) => {
     callback(error, row)
   })
 }
 
 const findSavedById = (user_id, callback) => {
-  return database.get(`SELECT * FROM saved WHERE user_id = ?`, user_id, (error, row) => {
+  return database.all(`SELECT * FROM saved WHERE user_id = ?`, user_id, (error, row) => {
     callback(error, row)
   })
 }
 
-const addView = (user_id, views_type, views_id, views_title, views_image, callback) => {
-  const query = `INSERT INTO views (user_id, views_type, views_id, views_title, views_image, show_user) VALUES (?, ?, ?, ?, ?, ?)`
-  const values = [user_id, views_type, views_id, views_title, views_image, 'true']
+const addView = (user_id, type, id, title, image, callback) => {
+  const query = `INSERT INTO views (user_id, type, id, title, image, show_user) VALUES (?, ?, ?, ?, ?, ?)`
+  const values = [user_id, type, id, title, image, 'true']
   return database.get(query, values, (error) => {
     callback(error)
   })
 }
 
-const addWatched = (user_id, watched_type, watched_id, watched_title, watched_image, resume, season, episode, rating, callback) => {
-  const query = `INSERT INTO watched (user_id, watched_type, watched_id, watched_title, watched_image, resume, season, episode, rating) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
-  const values = [user_id, watched_type, watched_id, watched_title, watched_image, season, episode, rating];
+const addWatched = (user_id, type, id, title, image, resume, season, episode, rating, callback) => {
+  const query = `INSERT INTO watched (user_id, type, id, title, image, resume, season, episode, rating) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+  const values = [user_id, type, id, title, image, season, episode, rating];
   return database.get(query, values, (error) => {
     callback(error)
   })
 }
 
-const addSaved = (user_id, list_type, saved_type, saved_id, saved_title, saved_image, callback) => {
-  const query = `INSERT INTO saved (user_id, list_type, saved_type, saved_id, saved_title, saved_image) VALUES (?, ?, ?, ?, ?, ?)`
-  const values = [user_id, list_type, saved_type, saved_id, saved_title, saved_image]
+const addSaved = (user_id, list, type, id, title, image, callback) => {
+  const query = `INSERT INTO saved (user_id, list, type, id, title, image) VALUES (?, ?, ?, ?, ?, ?)`
+  const values = [user_id, list, type, id, title, image]
   return database.get(query, values, (error) => {
     callback(error)
   })
 }
 
-const removeSaved = (user_id, list_type, saved_type, saved_id, callback) => {
-  const query = `DELETE FROM saved WHERE user_id = ? AND list_type = ? AND saved_type = ? AND saved_id = ?`
-  const values = [user_id, list_type, saved_type, saved_id]
+const removeSaved = (user_id, list, type, id, callback) => {
+  const query = `DELETE FROM saved WHERE user_id = ? AND list = ? AND type = ? AND id = ?`
+  const values = [user_id, list, type, id]
   return database.get(query, values, (error) => {
     callback (error)
   })
@@ -150,11 +151,7 @@ router.post('/views/add', (req, res) => {
 
   addView(user_id, views_type, views_id, views_title, views_image, (error) => {
     if (error) handleError(res, error.errno)
-    else findViewsById(user_id, (error, views) => {
-      if (error) handleError(res, error.errno)
-      else if (!views) handleError(res, 'views')
-      else res.status(200).send(views)
-    })
+    else res.status(200).send()
   })
 })
 
@@ -162,9 +159,8 @@ router.post('/watched', (req, res) => {
   console.log(req.body)
 
   const user_id = req.body['userId']
-  const resume = req.body['resume']
 
-  findWatchedById(user_id, resume, (error, watched) => {
+  findWatchedById(user_id, (error, watched) => {
     if (error) handleError(res, error.errno)
     else if (!watched) handleError (res, 'watched')
     else res.status(200).send(watched)
@@ -186,13 +182,8 @@ router.post('/watched/add', (req, res) => {
 
   addWatched(user_id, watched_type, watched_id, watched_title, watched_image, resume, season, episode, rating, (error) => {
     if (error) handleError(res, error.errno)
-    else findWatchedById(user_id, (error, watched) => {
-      if (error) handleError(res, error.errno)
-      else if (!watched) handleError(res, 'watched')
-      else res.status(200).send(watched)
-    })
+    else res.status(200).send()
   })
-
 })
 
 router.post('/saved', (req, res) => {
@@ -219,11 +210,7 @@ router.post('/saved/add', (req, res) => {
 
   addSaved(user_id, list_type, saved_type, saved_id, saved_title, saved_image, (error) => {
     if (error) handleError(res, error.errno)
-    else findSavedById(user_id, (error, saved) => {
-      if (error) handleError(res, error.errno)
-      else if (!saved) handleError(res, 'saved')
-      else res.status(200).send(saved)
-    })
+    else res.status(200).send()
   })
 })
 
@@ -240,7 +227,9 @@ router.post('/saved/remove', (req, res) => {
     else findSavedById(user_id, (error, saved) => {
       if (error) handleError(res, error.errno)
       else if (!saved) handleError(res, 'saved')
-      else res.status(200).send(saved)
+      else res.status(200)
     })
   })
 })
+
+module.exports = router

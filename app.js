@@ -9,6 +9,7 @@ const usersRouter = require('./routes/users');
 const showsRouter = require('./routes/shows');
 const episodesRouter = require('./routes/episodes');
 const moviesRouter = require('./routes/movies');
+const portalRouter = require('./routes/portal')
 const subscriptionsRouter = require('./routes/subscriptions');
 const settingsRouter = require('./routes/settings');
 const guideboxTestingRouter = require('./routes/guideboxTesting');
@@ -25,10 +26,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/shows', showsRouter);
-app.use('/channels', subscriptionsRouter);
-app.use('/settings', settingsRouter);
-app.use('/movies', moviesRouter);
 app.use('/episodes', episodesRouter);
+app.use('/movies', moviesRouter);
+app.use('/portal', portalRouter);
+app.use('/subscriptions', subscriptionsRouter);
+app.use('/settings', settingsRouter);
 app.use('/guideboxTesting', guideboxTestingRouter);
 
 module.exports = app;

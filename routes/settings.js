@@ -38,9 +38,6 @@ const findBrowseSettingsById = (user_id, callback) => {
 
 const findOptionSettingsById = (user_id, callback) => {
   return database.all(`SELECT * FROM option WHERE user_id = ?`, user_id, (error, row) => {
-    row.forEach(result => {
-      console.log(result)
-    })
     callback(error, row)
   })
 }
@@ -121,7 +118,6 @@ router.post('/', (req, res) => {
           defaultOptionSettings(default_options => {
             option_types.forEach(type => {
               default_options['available_' + type + 's'].forEach(option => {
-                console.log(option);
                 createOptionSetting(user_id, type, option, error => {
                   if (error) handleError(res, error.errno)
                 })
