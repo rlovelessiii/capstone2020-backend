@@ -15,8 +15,7 @@ const createViewsTable = () => {
     type text,
     id integer,
     title text,
-    image text,
-    show_user text)`
+    image text)`
   return database.run(query)
 }
 
@@ -27,11 +26,7 @@ const createWatchedTable = () => {
     type text,
     id integer,
     title text,
-    watched_image text,
-    resume text,
-    season integer,
-    episode integer,
-    rating number)`
+    image text)`
   return database.run(query)
 }
 
@@ -39,7 +34,6 @@ const createSavedTable = () => {
   const query = `
     CREATE TABLE IF NOT EXISTS saved (
     user_id integer,
-    list text,
     type text,
     id integer,
     title text,
@@ -66,24 +60,24 @@ const findSavedById = (user_id, callback) => {
 }
 
 const addView = (user_id, type, id, title, image, callback) => {
-  const query = `INSERT INTO views (user_id, type, id, title, image, show_user) VALUES (?, ?, ?, ?, ?, ?)`
-  const values = [user_id, type, id, title, image, 'true']
+  const query = `INSERT INTO views (user_id, type, id, title, image) VALUES (?, ?, ?, ?, ?)`
+  const values = [user_id, type, id, title, image]
   return database.get(query, values, (error) => {
     callback(error)
   })
 }
 
-const addWatched = (user_id, type, id, title, image, resume, season, episode, rating, callback) => {
-  const query = `INSERT INTO watched (user_id, type, id, title, image, resume, season, episode, rating) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
-  const values = [user_id, type, id, title, image, season, episode, rating];
+const addWatched = (user_id, type, id, title, image, callback) => {
+  const query = `INSERT INTO watched (user_id, type, id, title, image) VALUES (?, ?, ?, ?, ?)`
+  const values = [user_id, type, id, title, image];
   return database.get(query, values, (error) => {
     callback(error)
   })
 }
 
-const addSaved = (user_id, list, type, id, title, image, callback) => {
-  const query = `INSERT INTO saved (user_id, list, type, id, title, image) VALUES (?, ?, ?, ?, ?, ?)`
-  const values = [user_id, list, type, id, title, image]
+const addSaved = (user_id, type, id, title, image, callback) => {
+  const query = `INSERT INTO saved (user_id, type, id, title, image) VALUES (?, ?, ?, ?, ?)`
+  const values = [user_id, type, id, title, image]
   return database.get(query, values, (error) => {
     callback(error)
   })
@@ -175,12 +169,8 @@ router.post('/watched/add', (req, res) => {
   const watched_id = req.body['id']
   const watched_title = req.body['title']
   const watched_image = req.body['image']
-  const resume = req.body['resume']
-  const season = req.body['season']
-  const episode = req.body['episode']
-  const rating = req.body['rating']
 
-  addWatched(user_id, watched_type, watched_id, watched_title, watched_image, resume, season, episode, rating, (error) => {
+  addWatched(user_id, watched_type, watched_id, watched_title, watched_image, (error) => {
     if (error) handleError(res, error.errno)
     else res.status(200).send()
   })
@@ -202,13 +192,12 @@ router.post('/saved/add', (req, res) => {
   console.log(req.body)
 
   const user_id = req.body['userId']
-  const list_type = req.body['list']
   const saved_type = req.body['type']
   const saved_id = req.body['id']
   const saved_title = req.body['title']
   const saved_image = req.body['image']
 
-  addSaved(user_id, list_type, saved_type, saved_id, saved_title, saved_image, (error) => {
+  addSaved(user_id, saved_type, saved_id, saved_title, saved_image, (error) => {
     if (error) handleError(res, error.errno)
     else res.status(200).send()
   })
