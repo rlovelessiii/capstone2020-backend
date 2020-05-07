@@ -26,7 +26,9 @@ const createWatchedTable = () => {
     type text,
     id integer,
     title text,
-    image text)`
+    image text,
+    provider text,
+    date_watched date)`
   return database.run(query)
 }
 
@@ -67,9 +69,9 @@ const addView = (user_id, type, id, title, image, callback) => {
   })
 }
 
-const addWatched = (user_id, type, id, title, image, callback) => {
-  const query = `INSERT INTO watched (user_id, type, id, title, image) VALUES (?, ?, ?, ?, ?)`
-  const values = [user_id, type, id, title, image];
+const addWatched = (user_id, type, id, title, image, provider, date, callback) => {
+  const query = `INSERT INTO watched (user_id, type, id, title, image, provider, date_watched) VALUES (?, ?, ?, ?, ?, ?, ?)`
+  const values = [user_id, type, id, title, image, provider, date];
   return database.get(query, values, (error) => {
     callback(error)
   })
@@ -88,6 +90,14 @@ const removeSaved = (user_id, list, type, id, callback) => {
   const values = [user_id, list, type, id]
   return database.get(query, values, (error) => {
     callback (error)
+  })
+}
+
+const getRecommendationScores = (user_id, date, callback) => {
+  const query = `SELECT provider, COUNT(*) AS count FROM watched WHERE user_id = ? AND date_watched > ? GROUP BY provider`;
+  const values = [user_id, date];
+  return database.all(query, values, (error, row) => {
+    callback (error, row);
   })
 }
 
@@ -169,12 +179,59 @@ router.post('/watched/add', (req, res) => {
   const watched_id = req.body['id']
   const watched_title = req.body['title']
   const watched_image = req.body['image']
+  const provider = req.body['provider']
 
-  addWatched(user_id, watched_type, watched_id, watched_title, watched_image, (error) => {
+  let d = new Date(),
+    month = '' + (d.getMonth() + 1),
+    day = '' + d.getDate(),
+    year = d.getFullYear();
+  if (month.length < 2)
+    month = '0' + month;
+  if (day.length < 2)
+    day = '0' + day;
+  const date = [year, month, day].join('-');
+  console.log(date); 
+
+  addWatched(user_id, watched_type, watched_id, watched_title, watched_image, provider, date, (error) => {
+    console.log(error)
     if (error) handleError(res, error.errno)
     else res.status(200).send()
   })
 })
+
+router.post('/recommendations', (req, res) => {
+
+  findWatchedById(1, (error, watched) => {
+    console.log(watched);
+  })
+
+  let d = new Date(),
+    month = '' + (d.getMonth() + 1),
+    day = '01',
+    year = d.getFullYear();
+  if (month.length < 2)
+    month = '0' + month;
+  const date = [year, month, day].join('-');
+
+  console.log(req.body);
+  const user_id = req.body['id'];
+  const subscriptions = new Set(req.body['subscriptions']);
+  recomendations = []
+  getRecommendationScores(user_id, date, (error, row) => {
+    if (error) handleError (res, error.errno);
+      console.log(row);
+      row.forEach((row) => {
+        if(subscriptions.has(row.provider)) {
+          row.score = parseInt(Math.pow(row.count, .9)*9);
+          if (row.score > 99) {
+            row.score = 99;
+          }
+          recomendations.push({provider: row.provider, score: row.score});
+        }
+      });
+    res.send(recomendations);
+  });
+});
 
 router.post('/saved', (req, res) => {
   console.log(req.body)
