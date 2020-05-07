@@ -24,14 +24,9 @@ const createWatchedTable = () => {
   const query = `
     CREATE TABLE IF NOT EXISTS watched (
     user_id integer,
-    type text,
-    id integer,
-    title text,
-    watched_image text,
-    resume text,
-    season integer,
-    episode integer,
-    rating number)`
+    title_id integer,
+    provider text,
+    date_watched date)`
   return database.run(query)
 }
 
@@ -73,9 +68,9 @@ const addView = (user_id, type, id, title, image, callback) => {
   })
 }
 
-const addWatched = (user_id, type, id, title, image, resume, season, episode, rating, callback) => {
-  const query = `INSERT INTO watched (user_id, type, id, title, image, resume, season, episode, rating) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
-  const values = [user_id, type, id, title, image, season, episode, rating];
+const addWatched = (user_id, title_id, provider, date, callback) => {
+  const query = `INSERT INTO watched (user_id, title_id, provider, date_watched) VALUES (?, ?, ?, ?)`
+  const values = [user_id, title_id, provider, date];
   return database.get(query, values, (error) => {
     callback(error)
   })
@@ -94,6 +89,14 @@ const removeSaved = (user_id, list, type, id, callback) => {
   const values = [user_id, list, type, id]
   return database.get(query, values, (error) => {
     callback (error)
+  })
+}
+
+const getRecommendationScores = (user_id, date, callback) => {
+  const query = `SELECT provider, COUNT(*) AS count FROM watched WHERE user_id = ? AND date_watched > ? GROUP BY provider`;
+  const values = [user_id, date];
+  return database.all(query, values, (error, row) => {
+    callback (error, row);
   })
 }
 
@@ -171,20 +174,68 @@ router.post('/watched/add', (req, res) => {
   console.log(req.body)
 
   const user_id = req.body['userId']
-  const watched_type = req.body['type']
-  const watched_id = req.body['id']
-  const watched_title = req.body['title']
-  const watched_image = req.body['image']
-  const resume = req.body['resume']
-  const season = req.body['season']
-  const episode = req.body['episode']
-  const rating = req.body['rating']
+  const title_id = req.body['titleId']
+  const provider = req.body['provider']
 
-  addWatched(user_id, watched_type, watched_id, watched_title, watched_image, resume, season, episode, rating, (error) => {
+  let d = new Date(),
+    month = '' + (d.getMonth() + 1),
+    day = '' + d.getDate(),
+    year = d.getFullYear();
+  if (month.length < 2)
+    month = '0' + month;
+  if (day.length < 2)
+    day = '0' + day;
+  const date = [year, month, day].join('-');
+  console.log(date);
+
+  addWatched(user_id, title_id, provider, date, (error) => {
     if (error) handleError(res, error.errno)
     else res.status(200).send()
   })
 })
+
+router.post('/recommendations', (req, res) => {
+  /**
+  let d1 = new Date(),
+    month2 = '' + (d1.getMonth() + 1),
+    day2 = '' + d1.getDate(),
+    year2 = d1.getFullYear();
+  if (month2.length < 2)
+    month2 = '0' + month2;
+  if (day2.length < 2)
+    day2 = '0' + day2;
+  const date2 = [year2, month2, day2].join('-');
+  for(var i = 1; i < 5; i++){
+  addWatched(1, i, 'Disney+', date2, (error) => {
+    if (error) handleError(res, error.errno)
+  })} */
+
+  let d = new Date(),
+    month = '' + (d.getMonth() + 1),
+    day = '01',
+    year = d.getFullYear();
+  if (month.length < 2)
+    month = '0' + month;
+  const date = [year, month, day].join('-');
+
+  console.log(req.body);
+  const user_id = req.body['id'];
+  const subscriptions = new Set(req.body['subscriptions']);
+  recomendations = []
+  getRecommendationScores(user_id, date, (error, row) => {
+    if (error) handleError (res, error.errno);
+      row.forEach((row) => {
+        if(subscriptions.has(row.provider)) {
+          row.score = parseInt(Math.pow(row.count, .9)*9);
+          if (row.score > 99) {
+            row.score = 99;
+          }
+          recomendations.push({provider: row.provider, score: row.score});
+        }
+      });
+    res.send(recomendations);
+  });
+});
 
 router.post('/saved', (req, res) => {
   console.log(req.body)
