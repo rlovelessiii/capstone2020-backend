@@ -195,21 +195,6 @@ router.post('/watched/add', (req, res) => {
 })
 
 router.post('/recommendations', (req, res) => {
-  /**
-  let d1 = new Date(),
-    month2 = '' + (d1.getMonth() + 1),
-    day2 = '' + d1.getDate(),
-    year2 = d1.getFullYear();
-  if (month2.length < 2)
-    month2 = '0' + month2;
-  if (day2.length < 2)
-    day2 = '0' + day2;
-  const date2 = [year2, month2, day2].join('-');
-  for(var i = 1; i < 5; i++){
-  addWatched(1, i, 'Disney+', date2, (error) => {
-    if (error) handleError(res, error.errno)
-  })} */
-
   let d = new Date(),
     month = '' + (d.getMonth() + 1),
     day = '01',
